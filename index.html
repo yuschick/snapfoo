@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>SnapFoo - SVG Animation Library</title>
+    <meta name="description" content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to simplify the SVG animation process." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="name" content="SnapFoo - SVG Animation Library">
+    <meta itemprop="description" content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to simplify the SVG animation process.">
+    <meta property="og:title" content="SnapFoo - SVG Animation Library"/>
+    <meta property="og:description" content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to simplify the SVG animation process."/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/main.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header class="row">
+        <div class="container">
+            <div class="col-md-6">
+                <a href="/" title="SnapFoo - Home"><img src="lib/img/snapfoo-logo.png" class="the-logo" alt="SnapFoo - SVG Animation Library"/></a>
+            </div>
+
+            <div class="col-md-6">
+                <div class="header-button-container">
+                    <div class="button">
+                        <a href="#" title="SnapFoo on GitHub">GitHub</a>
+                    </div>
+                    <div class="button">
+                        <a href="#" title="SnapFoo Examples">Examples</a>
+                    </div>
+                    <div class="button">
+                        <a href="#" title="SnapFoo Examples">Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="row banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 text-container">
+                    <h1>SnapFoo</h1>
+                    <p>SnapFoo is an open source JavaScript library that extends off of SnapSVG to help simplify the SVG animation process.</p>
+                </div>
+                <div class="col-md-5 hiya-container">
+                    <img src="lib/img/SnapFoo-logo-kick.png" alt="SnapFoo - SVG Animation Library" class="hiya"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row content docs">
+        <div class="col-md-12 section-header">
+            <div class="container">
+                <h2>Docs</h2>
+            </div>
+        </div>
+
+        <div class="row container">
+            <div class="row docs-container">
+                <div class="col-md-4 docs-tree">
+                    <ul>
+                        <li><a href="#" title="Getting Started" onClick="scrollTo('#docs-getting-started')"><span class="heavy">Getting Started</span></a></li>
+                        <li><a href="#" title="Animate" onClick="scrollTo('#docs-animate')"><span class="heavy">Animate</span></a>
+                            <ul>
+                                <li><a href="#" title="Animate - theElement" onClick="scrollTo('#docs-animate-theElement')">theElement</a></li>
+                                <li><a href="#" title="Animate - theAnimationValues" onClick="scrollTo('#docs-animate-theAnimationValues')">theAnimationValues</a>
+                                    <ul>
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Keyframes" onClick="scrollTo('#docs-animate-keyframes')">.keyframes</a>
+                                            <ul>
+                                                <li class="light"><a href="#" title="Animate - theAnimationValues - Keyframes - Values" onClick="scrollTo('#docs-animate-keyframes-values')">.keyframes.values</a></li>
+                                                <li class="light"><a href="#" title="Animate - theAnimationValues - Keyframes - Duration" onClick="scrollTo('#docs-animate-keyframes-duration')">.keyframes.duration</a></li>
+                                                <li class="light"><a href="#" title="Animate - theAnimationValues - Keyframes - Easing" onClick="scrollTo('#docs-animate-keyframes-easing')">.keyframes.easing</a></li>
+                                                <li class="light"><a href="#" title="Animate - theAnimationValues - Keyframes - Options" onClick="scrollTo('#docs-animate-keyframes-options')">.keyframes.options</a>
+                                                    <ul>
+                                                        <li><a href="#" title="Animate - theAnimationValues - Keyframes - Options - Callback" onClick="scrollTo('#docs-animate-keyframes-options-callback')">.options.keyframeCallback</a></li>
+                                                        <li><a href="#" title="Animate - theAnimationValues - Keyframes - Options - Delay" onClick="scrollTo('#docs-animate-keyframes-options-delay')">.options.keyframeDelay</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Callback" onClick="scrollTo('#docs-animate-callback')">.animationCallback</a></li>
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Delay" onClick="scrollTo('#docs-animate-delay')">.animationDelay</a></li>
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Loop" onClick="scrollTo('#docs-animate-loop')">.loop</a></li>
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Loop Count" onClick="scrollTo('#docs-animate-loopcount')">.loopCount</a></li>
+                                        <li class="light"><a href="#" title="Animate - theAnimationValues - Stagger" onClick="scrollTo('#docs-animate-stagger')">.stagger</a></li>
+                                    </ul>
+                                </li>
+                                <li class="light"><a href="#" title="Animate - theFrame" onClick="scrollTo('#docs-animate-theFrame')">theFrame</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="heavy"><a href="#" title="AnimatePath" onClick="scrollTo('#docs-animatePath')">AnimatePath</a></span>
+                            <ul>
+                                <li><a href="#" title="AnimatePath - TheElement" onClick="scrollTo('#docs-animatePath-theElement')">theElement</a></li>
+                                <li><a href="#" title="AnimatePath - thePath" onClick="scrollTo('#docs-animatePath-thePath')">thePath</a></li>
+                                <li><a href="#" title="Animate - theDuration" onClick="scrollTo('#docs-animatePath-theDuration')">theDuration</a></li>
+                                <li><a href="#" title="Animate - theOptions" onClick="scrollTo('#docs-animatePath-options')">theOptions</a>
+                                    <ul>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Callback" onClick="scrollTo('#docs-animatePath-options-callback')">theOptions.callback</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Delay" onClick="scrollTo('#docs-animatePath-options-delay')">theOptions.delay</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Easing" onClick="scrollTo('#docs-animatePath-options-easing')">theOptions.easing</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Loop" onClick="scrollTo('#docs-animatePath-options-loop')">theOptions.loop</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Loop Options" onClick="scrollTo('#docs-animatePath-options-loopOptions')">theOptions.loopOptions</a>
+                                            <ul>
+                                                <li><a href="#" title="Animate - theOptions - Loop Options - Loop Count" onClick="scrollTo('#docs-animatePath-options-loopOptions-loopCount')">.loopOptions.loopCount</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - ReverseAtEnd" onClick="scrollTo('#docs-animatePath-options-reverseAtEnd')">theOptions.reverseAtEnd</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - ReverseOptions" onClick="scrollTo('#docs-animatePath-options-reverseOptions')">theOptions.reverseOptions</a>
+                                            <ul>
+                                                <li><a href="#" title="Animate - theOptions - ReverseOptions - Callback" onClick="scrollTo('#docs-animatePath-options-reverseOptions-callback')">.reverseOptions.callback</a></li>
+                                                <li><a href="#" title="Animate - theOptions - ReverseOptions - Delay" onClick="scrollTo('#docs-animatePath-options-reverseOptions-delay')">.reverseOptions.delay</a></li>
+                                                <li><a href="#" title="Animate - theOptions - ReverseOptions - Duration" onClick="scrollTo('#docs-animatePath-options-reverseOptions-duration')">.reverseOptions.duration</a></li>
+                                                <li><a href="#" title="Animate - theOptions - ReverseOptions - Easing" onClick="scrollTo('#docs-animatePath-options-reverseOptions-easing')">.reverseOptions.easing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - ReversePathDirection" onClick="scrollTo('#docs-animatePath-options-reversePath')">theOptions.reversePathDirection</a></li>
+                                        <li class="light"><a href="#" title="Animate - theOptions - Stagger" onClick="scrollTo('#docs-animatePath-options-stagger')">theOptions.stagger</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="heavy"><a href="#" title="Clear" onClick="scrollTo('#docs-clear')">Clear</a></span>
+                            <ul>
+                                <li><a href="#" title="Clear - All" onClick="scrollTo('#docs-clearAll')">.all()</a></li>
+                                <li><a href="#" title="Clear - Paths" onClick="scrollTo('#docs-clearPaths')">.paths()</a></li>
+                                <li><a href="#" title="Clear - Sequences" onClick="scrollTo('#docs-clearSequences')">.sequences()</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="heavy"><a href="#" title="Set" onClick="scrollTo('#docs-set')">Set</a></span>
+                            <ul>
+                                <li><a href="#" title="Set - theElement" onClick="scrollTo('#docs-set-element')">theElement</a></li>
+                                <li><a href="#" title="Set - theAttrValues" onClick="scrollTo('#docs-set-attrvalues')">theAttrValues</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="heavy"><a href="#" title="Stop" onClick="scrollTo('#docs-stop')">Stop</a></span>
+                            <ul>
+                                <li><a href="#" title="Stop - Section Animations" onClick="scrollTo('#docs-stop-section')">.sectionAnimation(theSVGContainerID)</a>
+                                    <ul>
+                                        <li><a href="#" title="Stop - Section Animations - theSVGContainerID" onClick="scrollTo('#docs-stop-section-sectionid')">theSVGContainerID</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" title="Stop - Specific Animation" onClick="scrollTo('#docs-stop-specific')">.specificAnimation(theElement)</a>
+                                    <ul>
+                                        <li><a href="#" title="Stop - Specific Animation - theElement" onClick="scrollTo('#docs-stop-specific-theelement')">theElement</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 docs-details">
+                    <section id="docs-getting-started" class="docs-section">
+                        <h3>Getting Started</h3>
+                        <p>Download SnapFoo and include it in your project after jQuery and Snap.svg. Once included, call the library for use by passing in the SVG container ID:</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theSVGContainerID <span class="light">{String}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>var snapfoo = snapFoo("#theSVGContainerID");</code></pre>
+                    </section>
+
+                    <section id="docs-animate" class="docs-section">
+                        <h3>Animate</h3>
+                        <p>The primary animation call that receives an element or group of elements to animate based on theAnimationValues object. Any object that is animated is appended the class <span class="heavy">"sf#"</span> for a unique identifier.</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theElement <span class="light">{String}</span></li>
+                                <li>theAnimationValues <span class="light">{Object}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.animate(theElement, theAnimationValues)</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-theElement" class="docs-section">
+                        <h3>Animate - theElement {String}</h3>
+                        <p>Use a jQuery-like selector to target which elements should be animated. SnapFoo will iterate over any matches found inside of <span class="heavy">theSVGContainerID</span>.</p>
+                        <p class="heavy">Target individual elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.animate("#the-circle", theAnimationValues);</code></pre>
+                        <p class="heavy">Select numerous elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.animate(".the-circle, #the-square, .test-element", theAnimationValues);</code></pre>
+                        <p class="heavy">Select elements by tag:</p>
+                        <pre class="prettyprint"><code>snapfoo.animate("circle", theAnimationValues);</code></pre>
+                        <p class="heavy">Use other selector types:</p>
+                        <pre class="prettyprint"><code>snapfoo.animate("g > circle", theAnimationValues);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-theAnimationValues" class="docs-section">
+                        <h3>Animate - theAnimationValues {Object}</h3>
+                        <p>The <span class="heavy">theAnimationValues</span> objects supports various keys that define the behavior of the animation. </p>
+                        <div class="arguments">
+                            <p class="heavy">Keys:</p>
+                            <ul>
+                                <li>theAnimationValues {Object}
+                                    <ul>
+                                        <li>.keyframes {Array}
+                                            <ul>
+                                                <li>.keyframes.values {Object}</li>
+                                                <li>.keyframes.duration {Number}</li>
+                                                <li>.keyframes.easing {Function}</li>
+                                                <li>.keyframes.options {Object}
+                                                    <ul>
+                                                        <li>.options.keyframeCallback {Function}</li>
+                                                        <li>.options.keyframeDelay {Number}</li>
+                                                    </ul>
+                                                </li>
+                                                <li>.animationDelay {Number}</li>
+                                                <li>.animationCallback {Function}</li>
+                                                <li>.loop {Boolean}</li>
+                                                <li>.loopCount {Number}</li>
+                                                <li>.stagger {Number}</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p>The minimum requirements include a <span class="heavy">.keyframes</span> entry with the <span class="heavy">.values</span> and <span class="heavy">.duration</span> set. The other keys are set to defaults if not supplied.</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500 }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes" class="docs-section">
+                        <h3>Animate - keyframes {Array}</h3>
+                        <p>The <span class="heavy">keyframes</span> array stores the information for each step of the animation.  Add multiple entries to the keyframes array to create a sequence, with each entry being referred to as a <span class="heavy">'frame'</span>.</p>
+                        <div class="arguments">
+                            <p class="heavy">Values:</p>
+                            <ul>
+                                <li>keyframes {Array}
+                                    <ul>
+                                        <li>.keyframes.values {Object}</li>
+                                        <li>.keyframes.duration {Number}</li>
+                                        <li>.keyframes.easing {Function}</li>
+                                        <li>.keyframes.options {Object}
+                                            <ul>
+                                                <li>.options.keyframeCallback {Function}</li>
+                                                <li>.options.keyframeDelay {Number}</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500 },
+	    { values: { transform: "t100,-40" }, duration: 1500 },
+	    { values: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-values" class="docs-section">
+                        <h3>Animate - keyframes.values {Object}</h3>
+                        <p>The <span class="heavy">values</span> object supplies the function with the properties that are to be animated. These calls follow the standard syntax of SnapSVG. SnapSVG documentation for transforms can be found <a href="http://svg.dabbles.info/snaptut-transform" title="SnapSVG Transforms" target="_blank">here</a>.</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500 },
+	    { values: { transform: "t100,-40" }, duration: 1500 },
+	    { values: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-duration" class="docs-section">
+                        <h3>Animate - keyframes.duration {Number}</h3>
+                        <p>Set the duration of the keyframe animation in milliseconds.</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500 },
+	    { values: { transform: "t100,-40" }, duration: 1500 },
+	    { values: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-easing" class="docs-section">
+                        <h3>Animate - keyframes.easing {Function}</h3>
+                        <p>Define the easing type for the keyframe animation. The easing functions are the same as those found in SnapSVG. Examples of supported mina-type easings can be found at this <a href="http://codepen.io/mike-tempest/pen/myvbrw" title="Easing Types - CodePen" target="_blank">CodePen</a>.</p>
+                        <p><span class="heavy">Default:</span> mina.linear</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.backin },
+	    { values: { transform: "t100,-40" }, duration: 1500 },
+	    { values: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-options" class="docs-section">
+                        <h3>Animate - keyframes.options {Object}</h3>
+                        <p>The options object provides additional non-required values to the animation call.</p>
+                        <p><span class="heavy">Default:</span> {}</p>
+                        <div class="arguments">
+                            <p class="heavy">Keys:</p>
+                            <ul>
+                                <li>.keyframes.options {Object}
+                                    <ul>
+                                        <li>.options.keyframeCallback {Function}</li>
+                                        <li>.options.keyframeDelay {Number}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce, options: {
+		keyframeCallback: function() { console.log("Frame End"); },
+		keyframeDelay: 1000
+	     }
+	 }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-options-callback" class="docs-section">
+                        <h3>Animate - keyframes.options.keyframeCallback {Function}</h3>
+                        <p>Supply a function to be executed upon the completion of the specific frame. These callbacks allow for easy chaining and sequencing of multiple animations.</p>
+                        <p><span class="heavy">Default:</span> null</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce, options: {
+		keyframeCallback: function() { console.log("Frame End"); }
+	        }
+	    }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-keyframes-options-delay" class="docs-section">
+                        <h3>Animate - keyframes.options.keyframeDelay {Number}</h3>
+                        <p>The provided <span class="heavy">keyframeDelay</span> will execute before processing the values of that specific frame.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce, options: {
+		keyframeDelay: 1000 }
+	        }
+	    }
+    ]
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-callback" class="docs-section">
+                        <h3>Animate - animationCallback {Function}</h3>
+                        <p>The <span class="heavy">animationCallback</span> function executes after completing all keyframe animations.</p>
+                        <p><span class="heavy">Default:</span> null</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce }
+     ],
+    animationDelay: 2500,
+    animationCallback: function() { console.log("All done!"); }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-delay" class="docs-section">
+                        <h3>Animate - animationDelay {Number}</h3>
+                        <p>The <span class="heavy">animationDelay</span> value is the duration before the first keyframe runs.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce }
+     ],
+    animationDelay: 2500
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-loop" class="docs-section">
+                        <h3>Animate - loop {Boolean}</h3>
+                        <p>When the <span class="heavy">loop</span> value is set to true, the series of keyframe animations will repeat.</p>
+                        <p><span class="heavy">Default:</span> false</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce },
+	 { values: { transform: "t100,-10 s2,2”, opacity: .75 }, duration: 1500 }
+     ],
+    loop: true
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-loopcount" class="docs-section">
+                        <h3>Animate - loopCount {Number}</h3>
+                        <p>Setting the <span class="heavy">loopCount</span> will define how many times the animation loops through the keyframes.</p>
+                        <p><span class="heavy">Default:</span> 0 (Infinite)</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce },
+	 { values: { transform: "t100,-10 s2,2”, opacity: .75 }, duration: 1500 }
+     ],
+    loop: true,
+    loopCount: 2
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-stagger" class="docs-section">
+                        <h3>Animate - stagger {Number}</h3>
+                        <p>The <span class="heavy">stagger</span> value is a delay placed between elements when animating a series or group.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theAnimationValues = {
+    keyframes: [
+            { values: { transform: "t10,40" }, duration: 500, easing: mina.bounce }
+     ],
+    stagger: 1000
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animate-theFrame" class="docs-section">
+                        <h3>Animate - theFrame {Number}</h3>
+                        <p>Set the starting frame.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>snapfoo.animate("g > circle", theAnimationValues, 2);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath" class="docs-section">
+                        <h3>AnimatePath</h3>
+                        <p>Animate an element or group of elements along a path. Any object that is animated is appended the class <span class="heavy">"sf#"</span> for a unique identifier.</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theElement <span class="light">{String}</span></li>
+                                <li>thePath <span class="light">{String}</span></li>
+                                <li>theDuration <span class="light">{Number}</span></li>
+                                <li>theOptions <span class="light">{Object}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.animatePath(theElement, thePath, theDuration, theOptions)</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-theElement" class="docs-section">
+                        <h3>AnimatePath - theElement {String}</h3>
+                        <p>Use a jQuery-like selector to target which elements should be animated. SnapFoo will iterate over any matches found inside of <span class="heavy">theSVGContainerID</span>.</p>
+                        <p class="heavy">Target individual elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath("#the-circle", thePath, theDuration, theOptions);</code></pre>
+                        <p class="heavy">Select numerous elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath(".the-circle, #the-square, .test-element", thePath, theDuration, theOptions);</code></pre>
+                        <p class="heavy">Select elements by tag:</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath("circle", thePath, theDuration, theOptions);</code></pre>
+                        <p class="heavy">Use other selector types:</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath("g > circle", thePath, theDuration, theOptions);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-thePath" class="docs-section">
+                        <h3>AnimatePath - thePath {String}</h3>
+                        <p>Defines the path on which the elements will be animated. Use a unique identifier such as an #ID.</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath(“.the-circle”, “#the-path”, 2500, theOptions);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-theDuration" class="docs-section">
+                        <h3>AnimatePath - theDuration {Number}</h3>
+                        <p>Set the duration of the path animation in milliseconds.</p>
+                        <pre class="prettyprint"><code>snapfoo.animatePath(“.the-circle”, “#the-path”, 2500, theOptions);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options" class="docs-section">
+                        <h3>AnimatePath - theOptions {Object}</h3>
+                        <p>Define optional path animation behaviors.</p>
+                        <p><span class="heavy">Default:</span> {}</p>
+                        <div class="arguments">
+                            <p class="heavy">Keys:</p>
+                            <ul>
+                                <li>theOptions {Object}
+                                    <ul>
+                                        <li>theOptions.callback {Function}</li>
+                                        <li>theOptions.delay {Number}</li>
+                                        <li>theOptions.easing {Function}</li>
+                                        <li>theOptions.loop {Boolean}</li>
+                                        <li>theOptions.loopOptions {Object}
+                                            <ul>
+                                                <li>.loopOptions.loopCount {Number}</li>
+                                            </ul>
+                                        </li>
+                                        <li>theOptions.reverseAtEnd {Boolean}</li>
+                                        <li>theOptions.reverseOptions {Object}
+                                            <ul>
+                                                <li>.reverseOptions.duration {Number}</li>
+                                                <li>.reverseOptions.easing {Function}</li>
+                                                <li>.reverseOptions.callback {Function}</li>
+                                                <li>.reverseOptions.delay {Number}</li>
+                                            </ul>
+                                        </li>
+                                        <li>theOptions.reversePathDirection {Boolean}</li>
+                                        <li>theOptions.stagger {Number}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-callback" class="docs-section">
+                        <h3>AnimatePath - theOptions.callback {Function}</h3>
+                        <p>Execute a function upon completing the path animation.</p>
+                        <p><span class="heavy">Default:</span> null</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    easing: mina.backin,
+    callback: function() { console.log(“Yup. Finished”); }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-delay" class="docs-section">
+                        <h3>AnimatePath - theOptions.delay {Number}</h3>
+                        <p>Place a delay before beginning the path animation.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    easing: mina.backin,
+    delay: 250
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-easing" class="docs-section">
+                        <h3>AnimatePath - theOptions.easing {Function}</h3>
+                        <p>Define the easing type for the animation. The easing functions are the same as those found in SnapSVG. Examples of supported mina-type easings can be found at this <a href="http://codepen.io/mike-tempest/pen/myvbrw" title="Easing Types - CodePen" target="_blank">CodePen</a>.</p>
+                        <p><span class="heavy">Default:</span> mina.linear</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    easing: mina.backin
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-loop" class="docs-section">
+                        <h3>AnimatePath - theOptions.loop {Boolean}</h3>
+                        <p>Repeats the path animation. If reverseAtEnd is true, the loop will begin after the element’s reverse animation has completed.</p>
+                        <p><span class="heavy">Default:</span> false</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reversePathDirection: true,
+    loop: true
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-loopOptions" class="docs-section">
+                        <h3>AnimatePath - theOptions.loopOptions {Object}</h3>
+                        <p>Set specific looping behaviors for the animation.</p>
+                        <p><span class="heavy">Default:</span> {}</p>
+                        <div class="arguments">
+                            <p class="heavy">Keys:</p>
+                            <ul>
+                                <li>loopOptions {Object}
+                                    <ul>
+                                        <li>loopOptions.loopCount {Number}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reversePathDirection: true,
+    loop: true,
+    loopOptions: {}
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-loopOptions-loopCount" class="docs-section">
+                        <h3>AnimatePath - theOptions.loopOptions.loopCount {Number}</h3>
+                        <p>Set a limit on the amount of loops that will be completed.</p>
+                        <p><span class="heavy">Default:</span> 0 (Infinite)</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    loop: true,
+    loopOptions: {
+        loopCount: 3
+    }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseAtEnd" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseAtEnd {Boolean}</h3>
+                        <p>Upon reaching the end of the path, reverseAtEnd will reverse the element(s) along the path back to the original starting point.</p>
+                        <p><span class="heavy">Default:</span> false</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    easing: mina.backin,
+    reverseAtEnd: true
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseOptions" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseOptions {Object}</h3>
+                        <p>With a reverse animation defined, use the reverseOptions to further customize the behavior.</p>
+                        <p><span class="heavy">Default:</span> {}</p>
+                        <div class="arguments">
+                            <p class="heavy">Keys:</p>
+                            <ul>
+                                <li>reverseOptions {Object}
+                                    <ul>
+                                        <li>reverseOptions.callback {Function}</li>
+                                        <li>reverseOptions.delay {Number}</li>
+                                        <li>reverseOptions.duration {Number}</li>
+                                        <li>reverseOptions.easing {Function}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reverseAtEnd: true,
+    reverseOptions: {}
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseOptions-callback" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseOptions.callback {Function}</h3>
+                        <p>Set a different callback for the reverse path animation.</p>
+                        <p><span class="heavy">Default:</span> null</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reverseAtEnd: true,
+    reverseOptions: {
+        duration: 2500,
+        easing: mina.backout,
+        callback: function() { console.log(“Reversed!”); }
+    }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseOptions-delay" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseOptions.delay {Number}</h3>
+                        <p>Set a delay before the reverse animation begins.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reverseAtEnd: true,
+    reverseOptions: {
+        duration: 2500,
+        easing: mina.backout,
+        callback: function() { console.log(“Reversed!”); },
+        delay: 1000
+    }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseOptions-duration" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseOptions.duration {Number}</h3>
+                        <p>Set a different duration for the reverse path animation.</p>
+                        <p><span class="heavy">Default:</span> theDuration</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reverseAtEnd: true,
+    reverseOptions: {
+        duration: 2500,
+        easing: mina.backout,
+        callback: function() { console.log(“Reversed!”); },
+        delay: 1000
+    }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reverseOptions-easing" class="docs-section">
+                        <h3>AnimatePath - theOptions.reverseOptions.easing {Function}</h3>
+                        <p>Set a different easing for the reverse path animation.</p>
+                        <p><span class="heavy">Default:</span> theOptions.easing || mina.linear</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reverseAtEnd: true,
+    reverseOptions: {
+        duration: 2500,
+        easing: mina.backout,
+        callback: function() { console.log(“Reversed!”); },
+        delay: 1000
+    }
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-reversePath" class="docs-section">
+                        <h3>AnimatePath - theOptions.reversePathDirection {Boolean}</h3>
+                        <p>Animates the element from the end to the beginning of the path.</p>
+                        <p><span class="heavy">Default:</span> false</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    reversePathDirection: true
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-animatePath-options-stagger" class="docs-section">
+                        <h3>AnimatePath - theOptions.stagger {Number}</h3>
+                        <p>The <span class="heavy">stagger</span> value is a delay placed between elements when animating a series or group.</p>
+                        <p><span class="heavy">Default:</span> 0</p>
+                        <pre class="prettyprint"><code>var theOptions = {
+    easing: mina.backin,
+    reverseAtEnd: true,
+    stagger: 1000
+};</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-clear" class="docs-section">
+                        <h3>Clear</h3>
+                        <p>The clear call points to an object containing three functions that will clear various loop intervals.</p>
+                        <div class="arguments">
+                            <p class="heavy">Functions:</p>
+                            <ul>
+                                <li>.all()</li>
+                                <li>.paths()</li>
+                                <li>.sequences()</li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.clear.all();</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-clearAll" class="docs-section">
+                        <h3>Clear.all()</h3>
+                        <p>Clear all stored loop interval IDs. This clear both sequence and path loops.</p>
+                        <pre class="prettyprint"><code>snapfoo.clear.all();</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-clearPaths" class="docs-section">
+                        <h3>Clear.paths()</h3>
+                        <p>Clear all path loop interval IDs.</p>
+                        <pre class="prettyprint"><code>snapfoo.clear.paths();</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-clearSequences" class="docs-section">
+                        <h3>Clear.sequences()</h3>
+                        <p>Clear all sequence loop interval IDs created with the <span class="heavy">.animate()</span> function.</p>
+                        <pre class="prettyprint"><code>snapfoo.clear.sequences();</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-set" class="docs-section">
+                        <h3>Set</h3>
+                        <p>Set an element's attributes without animating.</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theElement <span class="light">{String}</span></li>
+                                <li>theAttrValues <span class="light">{Object}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.set(theElement, theAttrValues);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-set-element" class="docs-section">
+                        <h3>Set - theElement {String}</h3>
+                        <p>Use a jQuery-like selector to target which elements should be set. SnapFoo will iterate over any matches found inside of <span class="heavy">theSVGContainerID</span>.</p>
+                        <p class="heavy">Target individual elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.set("#the-circle", theAttrValues);</code></pre>
+                        <p class="heavy">Select numerous elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.set(".the-circle, #the-square, .test-element", theAttrValues);</code></pre>
+                        <p class="heavy">Select elements by tag:</p>
+                        <pre class="prettyprint"><code>snapfoo.set("circle", theAttrValues);</code></pre>
+                        <p class="heavy">Use other selector types:</p>
+                        <pre class="prettyprint"><code>snapfoo.set("g > circle", theAttrValues);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-set-attrvalues" class="docs-section">
+                        <h3>Set - theAttrValues {Object}</h3>
+                        <p>The <span class="heavy">theAttrValues</span> object supplies the function with the properties that are to be set. These calls follow the standard syntax of SnapSVG. SnapSVG documentation for transforms can be found <a href="http://svg.dabbles.info/snaptut-transform" title="SnapSVG Transforms" target="_blank">here</a>.</p>
+                        <pre class="prettyprint"><code>theAttrValues = { transform: “t100,25 s1.2,1.2”, opacity: .75 }</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-stop" class="docs-section">
+                        <h3>Stop</h3>
+                        <p>The stop call points to an object containing two functions that will stop an element that is being animated. Note that if the element is part of a loop, the loop will continue until its interval is cleared or its loopCount has been met.</p>
+                        <div class="arguments">
+                            <p class="heavy">Functions:</p>
+                            <ul>
+                                <li>.sectionAnimations(theSVGContainerID)</li>
+                                <li>.specificAnimation(theElement)</li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.stop.sectionAnimations(theSVGContainerID);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-stop-section" class="docs-section">
+                        <h3>Stop.sectionAnimations(theSVGContainerID)</h3>
+                        <p>Stops all animations in the current SVG container. <span class="heavy">Note: </span> The <span class="heavy">stop()</span> function does not clear any loop intervals.</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theSVGContainerID <span class="light">{String}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>snapfoo.stop.sectionAnimations(theSVGContainerID);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-stop-section-sectionid" class="docs-section">
+                        <h3>Stop.sectionAnimations(theSVGContainerID) - theSVGContainerID {String}</h3>
+                        <p>The ID of the parent SVG container.</p>
+                        <p><span class="heavy">Default:</span> theSVGContainerID</p>
+                        <pre class="prettyprint"><code>snapfoo.stop.sectionAnimations("#section-one");</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-stop-specific" class="docs-section">
+                        <h3>Stop.sectionAnimations(theElement)</h3>
+                        <p>Stop the animation of a specific element. <span class="heavy">Note: </span> The <span class="heavy">stop()</span> function does not clear any loop intervals.</p>
+                        <div class="arguments">
+                            <p class="heavy">Arguments:</p>
+                            <ul>
+                                <li>theElement <span class="light">{String}</span></li>
+                            </ul>
+                        </div>
+                        <pre class="prettyprint"><code>.stop.specificAnimation(theElement);</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+
+                    <section id="docs-stop-specific-theelement" class="docs-section">
+                        <h3>Stop.sectionAnimations(theElement) - theElement {String}</h3>
+                        <p>Use a jQuery-like selector to target which elements should be stopped.</p>
+                        <p class="heavy">Target individual elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.stop.specificAnimation("#the-circle");</code></pre>
+                        <p class="heavy">Select numerous elements:</p>
+                        <pre class="prettyprint"><code>snapfoo.stop.specificAnimation(".the-circle, #the-square, .test-element");</code></pre>
+                        <p class="heavy">Select elements by tag:</p>
+                        <pre class="prettyprint"><code>snapfoo.stop.specificAnimation("circle");</code></pre>
+                        <p class="heavy">Use other selector types:</p>
+                        <pre class="prettyprint"><code>snapfoo.stop.specificAnimation("g > circle");</code></pre>
+                        <a class="return" title="Return to Top" href="#" onClick="scrollTo('.container-fluid')">Return to Top</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="/" title="SnapFoo - Home"><img src="lib/img/snapfoo-logo-white.png" class="the-logo" alt="SnapFoo - SVG Animation Library"/></a>
+
+            <div class="footer-button-container">
+                <div class="button">
+                    <a href="#" title="SnapFoo on GitHub">GitHub</a>
+                </div>
+                <div class="button">
+                    <a href="#" title="SnapFoo Examples">Examples</a>
+                </div>
+                <div class="button">
+                    <a href="#" title="SnapFoo Examples">Docs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="lib/js/jquery1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="lib/js/scripts-min.js"></script>
+</body>
+</html>
