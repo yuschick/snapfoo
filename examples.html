@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>SnapFoo - SVG Animation Library</title>
+    <meta name="description"
+          content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to help simplify the SVG animation process."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="name" content="SnapFoo - SVG Animation Library">
+    <meta itemprop="description"
+          content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to help simplify the SVG animation process.">
+    <meta property="og:title" content="SnapFoo - SVG Animation Library"/>
+    <meta property="og:description"
+          content="SnapFoo is an open source JavaScript library that extends off of SnapSVG to help simplify the SVG animation process."/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/main.min.css">
+    <script src="lib/js/jquery1.11.2.min.js"></script>
+    <script src="lib/js/snap.svg-min.js"></script>
+    <script src="src/js/snapfoo.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <header class="row">
+        <div class="container">
+            <div class="col-md-6">
+                <a href="/" title="SnapFoo - Home"><img src="lib/img/snapfoo-logo.png" class="the-logo"
+                                                        alt="SnapFoo - SVG Animation Library"/></a>
+            </div>
+
+            <div class="col-md-6">
+                <div class="header-button-container">
+                    <div class="button">
+                        <a href="https://github.com/yuschick/SnapFoo/" title="SnapFoo on GitHub">GitHub</a>
+                    </div>
+                    <div class="button">
+                        <a href="http://yuschick.github.io/SnapFoo/examples.html" title="SnapFoo Examples">Examples</a>
+                    </div>
+                    <div class="button">
+                        <a href="http://yuschick.github.io/SnapFoo/" title="SnapFoo Examples">Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="row content docs">
+        <div class="col-md-12 section-header">
+            <div class="container">
+                <h2>Examples</h2>
+            </div>
+        </div>
+
+        <div class="row container">
+            <div class="row docs-container">
+                <div class="col-md-3 docs-tree">
+                    <ul>
+                        <li><a href="#" title="Animate a Sequence" onClick="scrollTo('#examples-animate-sequence')"><span class="heavy">Animate a Sequence</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-loop')"><span class="heavy">Animate a Loop</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-callback')"><span class="heavy">Animate Using Callbacks</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-path')"><span class="heavy">Animate Along a Path</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-path-loop')"><span class="heavy">Animate a Loop Along a Path</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-path-reverse')"><span class="heavy">Animate Along a Path with Reverse Settings</span></a></li>
+                        <li><a href="#" title="Animate a Loop" onClick="scrollTo('#examples-animate-path-group')"><span class="heavy">Animate a Group Along a Path</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9 docs-details">
+                    <section id="examples-animate-sequence" class="docs-section">
+                        <h3>Animate a Sequence</h3>
+                        <p>This example demonstrates animating and staggering a group of circle elements.</p>
+                        <pre class="prettyprint"><code>var snapfoo = snapFoo("#sequence-animation");
+    var theValues = {
+        keyframes: [
+            { values: {transform: "t200,0"}, duration: 1000, easing: mina.backout },
+            { values: {transform: "t200,0, s.75,.75"}, duration: 500, easing: mina.bounce },
+            { values: {transform: "t400,0, s.75,.75"}, duration: 1000, easing: mina.backout }
+        ],
+        stagger: 1000
+    };
+    snapfoo.animate("circle", theValues);</code></pre>
+
+                        <script>
+                            var snapfoo = snapFoo("#sequence-animation");
+                            var theValues = {
+                                keyframes: [
+                                    { values: {transform: "t200,0"}, duration: 1000, easing: mina.backout },
+                                    { values: {transform: "t200,0, s.75,.75"}, duration: 500, easing: mina.bounce },
+                                    { values: {transform: "t400,0, s.75,.75"}, duration: 1000, easing: mina.backout }
+                                ],
+                                stagger: 1000
+                            };
+                            snapfoo.animate("circle", theValues);
+                        </script>
+                        <svg version="1.1" id="sequence-animation" x="0" y="0" viewBox="0 0 500 150" enable-background="new 0 0 500 150">
+                            <circle fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="15.78" r="13.78"/>
+                            <circle fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="75" r="13.78"/>
+                            <circle fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="134.22" r="13.78"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-loop" class="docs-section">
+                        <h3>Animate a Loop</h3>
+                        <p>This example demonstrates looping an animation that rotates and element while changing its points. Additionally, it utilizes the <span class="heavy">keyframeDelay</span> value.</p>
+                        <pre class="prettyprint"><code>var snapfoo = snapFoo("#loop-animation");
+var theValues = {
+    keyframes: [
+        { values: {transform: "r90,250,75", points: "286.99,111.99 250.426,75 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+        { values: {transform: "r180,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+        { values: {transform: "r270,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 213.01,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+        { values: {transform: "r360,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 213.01,74.467 213.01,38.01 249.405,38.01 286.99,38.01 286.99,73.958"}, duration: 1000 },
+        { values: {transform: "r0,250,75", points: "286.99,111.99 250.426,75 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 249.405,73.958"}, duration: 1000, easing: mina.backout, options: {keyframeDelay: 500}}
+    ],
+    loop: true
+};
+snapfoo.animate("#theShape", theValues);</code></pre>
+
+                        <script>
+                            var snapfoo = snapFoo("#loop-animation");
+                            var theValues = {
+                                keyframes: [
+                                    { values: {transform: "r90,250,75", points: "286.99,111.99 250.426,75 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+                                    { values: {transform: "r180,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+                                    { values: {transform: "r270,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 213.01,74.467 213.01,38.01 249.405,75 286.99,38.01 286.99,73.958"}, duration: 1000 },
+                                    { values: {transform: "r360,250,75", points: "286.99,111.99 250.426,111.99 213.01,111.99 213.01,74.467 213.01,38.01 249.405,38.01 286.99,38.01 286.99,73.958"}, duration: 1000 },
+                                    { values: {transform: "r0,250,75", points: "286.99,111.99 250.426,75 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 249.405,73.958"}, duration: 1000, easing: mina.backout, options: {keyframeDelay: 500} }
+                                ],
+                                loop: true
+                            };
+                            snapfoo.animate("#theShape", theValues);
+                        </script>
+                        <svg version="1.1" id="loop-animation" x="0px" y="0px" viewBox="0 0 500 150" enable-background="new 0 0 500 150">
+                            <polygon id="theShape" fill="#E76026" stroke="#333333" stroke-miterlimit="10" points="286.99,111.99 250.426,75 213.01,111.99 249.405,74.467 213.01,38.01 249.405,75 286.99,38.01 249.405,73.958"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-callback" class="docs-section">
+                        <h3>Animate Using Callbacks</h3>
+                        <p>This example demonstrates the use of different callback types to affect an element and chain animations.</p>
+                        <pre class="prettyprint"><code>var snapfoo = snapFoo("#callback-animation");
+var theValues = {
+    keyframes: [
+        { values: {transform: "t200,0"}, duration: 1000, easing: mina.backout },
+        { values: {transform: "t200,0, s.75,.75"}, duration: 500, easing: mina.bounce },
+        { values: {transform: "t400,0, s.75,.75"}, duration: 1000, easing: mina.backout, options: { keyframeCallback: function() {
+            snapfoo.set("#"+$('#callback-animation circle[class^="sf"]').last().attr("id"),{fill: "#ff0000"}); }} },
+        { values: {transform: "t0,0"}, duration: 1000, easing: mina.bounce }
+    ],
+    animationCallback: function() {
+        snapfoo.animate("#"+$('#callback-animation circle[class^="sf"]:last').next("circle").attr("id"),theValues);
+        $('#callback-animation circle[class^="sf"]:last').attr('class',
+            function(i, c){
+                return c.replace(/(^|\s)sf\S+/g, '');
+        }
+    ); }
+};
+snapfoo.animate("#circle-one", theValues);</code></pre>
+
+                        <script>
+                            var snapfoo = snapFoo("#callback-animation");
+                            var theValues = {
+                                keyframes: [
+                                    { values: {transform: "t200,0"}, duration: 1000, easing: mina.backout },
+                                    { values: {transform: "t200,0, s.75,.75"}, duration: 500, easing: mina.bounce },
+                                    { values: {transform: "t400,0, s.75,.75"}, duration: 1000, easing: mina.backout, options: { keyframeCallback: function() { snapfoo.set("#"+$('#callback-animation circle[class^="sf"]').last().attr("id"),{fill: "#ff0000"}); }} },
+                                    { values: {transform: "t0,0"}, duration: 1000, easing: mina.bounce }
+                                ],
+                                animationCallback: function() { snapfoo.animate("#"+$('#callback-animation circle[class^="sf"]:last').next("circle").attr("id"),theValues);
+                                    $('#callback-animation circle[class^="sf"]:last').attr('class',
+                                            function(i, c){
+                                                return c.replace(/(^|\s)sf\S+/g, '');
+                                            }); }
+                            };
+                            snapfoo.animate("#circle-one", theValues);
+                        </script>
+                        <svg version="1.1" id="callback-animation" x="0" y="0" viewBox="0 0 500 150" enable-background="new 0 0 500 150">
+                            <circle id="circle-one" fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="15.78" r="13.78"/>
+                            <circle id="circle-two" fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="75" r="13.78"/>
+                            <circle id="circle-three" fill="#E76026" stroke="#333333" stroke-miterlimit="10" cx="25.94" cy="134.22" r="13.78"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-path" class="docs-section">
+                        <h3>Animate Along a Path</h3>
+                        <p>This example demonstrates animating along a path without any additional options.</p>
+                        <pre class="prettyprint"><code>var snapfoopath = snapFoo("#animate-path");
+snapfoopath.animatePath("#the-ghost", "#the-path", 2500);</code></pre>
+
+                        <script>
+                            var snapfoopath = snapFoo("#animate-path");
+                            snapfoopath.animatePath("#the-ghost", "#the-path", 2500);
+                        </script>
+                        <svg version="1.1" id="animate-path" x="0" y="0" viewBox="0 0 500 150" enable-background="new 0 0 500 150" xml:space="preserve">
+                          <g id="the-ghost">
+                              <path fill="#E76026" stroke="#333333" stroke-miterlimit="10" d="M54.51 82.89c0 4.58 0.19 6.11-2.28 9.57 -0.58 0.82-2.87 4.31-3.56 5.03 -1.01 1.06-3.47-8.32-4.68-7.49 -1.17 0.81-1.08 11.83-2.41 12.4 -1.39 0.59-3.23-12.51-4.76-12.23 -1.25 0.23-2.17 13.89-3.48 13.89l0 0c-1.96 0-4.38-13.23-6.18-13.73 -1.58-0.44-3.42 13.61-4.83 12.83 -0.72-0.39-0.55-2.52-1.22-3 -1.08-0.77-0.69-10.05-1.61-11 -0.76-0.79-2.86 6.78-3.49 5.88 -2.42-3.44-3.84-7.63-3.84-12.16V60.95c0-11.69 9.48-21.17 21.17-21.17l0 0c11.69 0 21.17 9.48 21.17 21.17V82.89z"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="23.65" cy="60.25" r="3.25"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="40.65" cy="60.25" r="3.25"/>
+                          </g>
+                          <path id="the-path" fill="none" stroke="none" stroke-miterlimit="10" d="M33.33 71.92C33.33 71.92 85 41 130.5 44S207 71.92 207 71.92s31.5 33.58 77.5 9.58 47-28.91 81.5-37.7S449.5 60.5 438.5 96.5 281.5 49 281.5 49 227 46.12 174 104.06 33.33 75 33.33 75"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-path-loop" class="docs-section">
+                        <h3>Animate a Loop Along a Path</h3>
+                        <p>This example demonstrates looping along a path while reversing the direction of the path.</p>
+                        <pre class="prettyprint"><code>var snapfooPathLoop = snapFoo("#animate-path-loop");
+var theOptions = {
+    loop: true,
+    reversePathDirection: true
+};
+snapfooPathLoop.animatePath("#the-ghost2", "#the-path2", 2500, theOptions);</code></pre>
+                        <script>
+                            var snapfooPathLoop = snapFoo("#animate-path-loop");
+                            var theOptions = {
+                              loop: true,
+                              reversePathDirection: true
+                            };
+                            snapfooPathLoop.animatePath("#the-ghost2", "#the-path2", 2500, theOptions);
+                        </script>
+                        <svg version="1.1" id="animate-path-loop" x="0" y="0" viewBox="0 0 500 150" enable-background="new 0 0 500 150" xml:space="preserve">
+                          <g id="the-ghost2">
+                              <path fill="#E76026" stroke="#333333" stroke-miterlimit="10" d="M54.51 82.89c0 4.58 0.19 6.11-2.28 9.57 -0.58 0.82-2.87 4.31-3.56 5.03 -1.01 1.06-3.47-8.32-4.68-7.49 -1.17 0.81-1.08 11.83-2.41 12.4 -1.39 0.59-3.23-12.51-4.76-12.23 -1.25 0.23-2.17 13.89-3.48 13.89l0 0c-1.96 0-4.38-13.23-6.18-13.73 -1.58-0.44-3.42 13.61-4.83 12.83 -0.72-0.39-0.55-2.52-1.22-3 -1.08-0.77-0.69-10.05-1.61-11 -0.76-0.79-2.86 6.78-3.49 5.88 -2.42-3.44-3.84-7.63-3.84-12.16V60.95c0-11.69 9.48-21.17 21.17-21.17l0 0c11.69 0 21.17 9.48 21.17 21.17V82.89z"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="23.65" cy="60.25" r="3.25"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="40.65" cy="60.25" r="3.25"/>
+                          </g>
+                          <path id="the-path2" fill="none" stroke="none" stroke-miterlimit="10" d="M33.33 71.92C33.33 71.92 85 41 130.5 44S207 71.92 207 71.92s31.5 33.58 77.5 9.58 47-28.91 81.5-37.7S449.5 60.5 438.5 96.5 281.5 49 281.5 49 227 46.12 174 104.06 33.33 75 33.33 75"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-path-reverse" class="docs-section">
+                        <h3>Animate a Loop Along a Path with Reverse Options</h3>
+                        <p>This example demonstrates looping along a path where the element is reversed at the end of the path and separate reverse options have been set.</p>
+                        <pre class="prettyprint"><code>var snapfooPathLoop = snapFoo("#animate-path-loop-reverse");
+var theOptions = {
+    loop: true,
+    reverseAtEnd: true,
+    reverseOptions: {
+        duration: 1000,
+        easing: mina.easeout,
+        callback: function() {console.log("Reverse Ended!");}
+    }
+};
+snapfooPathLoop.animatePath("#ghost", "#path", 2500, theOptions);</code></pre>
+                        <script>
+                            var snapfooPathLoop = snapFoo("#animate-path-loop-reverse");
+                            var theOptions = {
+                                loop: true,
+                                reverseAtEnd: true,
+                                reverseOptions: {
+                                    duration: 1000,
+                                    easing: mina.easeout,
+                                    callback: function() {console.log("Reverse Ended!");}
+                                }
+                            };
+                            snapfooPathLoop.animatePath("#ghost", "#path", 2500, theOptions);
+                        </script>
+                        <svg version="1.1" id="animate-path-loop-reverse" x="0" y="0" viewBox="0 0 500 150" enable-background="new 0 0 500 150" xml:space="preserve">
+                          <g id="ghost">
+                              <path fill="#E76026" stroke="#333333" stroke-miterlimit="10" d="M54.51 82.89c0 4.58 0.19 6.11-2.28 9.57 -0.58 0.82-2.87 4.31-3.56 5.03 -1.01 1.06-3.47-8.32-4.68-7.49 -1.17 0.81-1.08 11.83-2.41 12.4 -1.39 0.59-3.23-12.51-4.76-12.23 -1.25 0.23-2.17 13.89-3.48 13.89l0 0c-1.96 0-4.38-13.23-6.18-13.73 -1.58-0.44-3.42 13.61-4.83 12.83 -0.72-0.39-0.55-2.52-1.22-3 -1.08-0.77-0.69-10.05-1.61-11 -0.76-0.79-2.86 6.78-3.49 5.88 -2.42-3.44-3.84-7.63-3.84-12.16V60.95c0-11.69 9.48-21.17 21.17-21.17l0 0c11.69 0 21.17 9.48 21.17 21.17V82.89z"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="23.65" cy="60.25" r="3.25"/>
+                              <circle fill="#333333" stroke="#E76026" stroke-miterlimit="10" cx="40.65" cy="60.25" r="3.25"/>
+                          </g>
+                          <path id="path" fill="none" stroke="none" stroke-miterlimit="10" d="M33.33 71.92C33.33 71.92 85 41 130.5 44S207 71.92 207 71.92s31.5 33.58 77.5 9.58 47-28.91 81.5-37.7S449.5 60.5 438.5 96.5 281.5 49 281.5 49 227 46.12 174 104.06 33.33 75 33.33 75"/>
+                        </svg>
+                    </section>
+
+                    <section id="examples-animate-path-group" class="docs-section">
+                        <h3>Animate a Loop Along a Path with Reverse Options</h3>
+                        <p>This example demonstrates looping along a path where the element is reversed at the end of the path and separate reverse options have been set.</p>
+                        <pre class="prettyprint"><code>var snapfooPathGroup = snapFoo("#animate-path-loop-group");
+var theOptions = {
+    loop: true,
+    stagger: 1000
+};
+snapfooPathGroup.animatePath("circle", "#group-path", 2500, theOptions);</code></pre>
+                        <script>
+                            var snapfooPathGroup = snapFoo("#animate-path-loop-group");
+                            var theOptions = {
+                                loop: true,
+                                stagger: 1000
+                            };
+                            snapfooPathGroup.animatePath("circle", "#group-path", 2500, theOptions);
+                        </script>
+                        <svg version="1.1" id="animate-path-loop-group" viewBox="0 0 500 150" enable-background="new 0 0 500 150" xml:space="preserve">
+                          <path id="group-path" fill="none" stroke="none" stroke-miterlimit="10" d="M21.5,129c0-25.56,40.149-75.241,65.5-78.5 c29.243-3.759,66.52,68.891,96,68.5c22.764-0.302,37.839-63.289,60-68.5c30.414-7.152,71.259,71.868,102.5,71.5 c21.083-0.249,34.78-59.6,55.5-63.5c22.492-4.234,70,36.113,70,59"/>
+                          <circle id="circle1" fill="#E76026" stroke="#000000" stroke-miterlimit="10" cx="21.5" cy="129" r="11.25"/>
+                          <circle fill="#E76026" stroke="#000000" stroke-miterlimit="10" cx="21.5" cy="129" r="11.25"/>
+                          <circle fill="#E76026" stroke="#000000" stroke-miterlimit="10" cx="21.5" cy="129" r="11.25"/>
+                        </svg>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="/" title="SnapFoo - Home"><img src="lib/img/snapfoo-logo-white.png" class="the-logo" alt="SnapFoo - SVG Animation Library"/></a>
+
+            <div class="footer-button-container">
+                <div class="button">
+                    <a href="https://github.com/yuschick/SnapFoo/" title="SnapFoo on GitHub">GitHub</a>
+                </div>
+                <div class="button">
+                    <a href="http://yuschick.github.io/SnapFoo/examples.html" title="SnapFoo Examples">Examples</a>
+                </div>
+                <div class="button">
+                    <a href="http://yuschick.github.io/SnapFoo/" title="SnapFoo Examples">Docs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="lib/js/scripts-min.js"></script>
+</body>
+</html>

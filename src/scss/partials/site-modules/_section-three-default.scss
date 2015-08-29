@@ -1,0 +1,59 @@
+.section.three.active {
+  @include bp("six") {
+    background: url(../img/background-clouds.png) repeat-y top center #01b3ef;
+    background-size: 100%;
+  }
+
+  .content-container {
+    padding-top: 10%;
+
+    @include bp("six") {
+      background: url(../img/background-city-mountains-320.jpg) no-repeat bottom left;
+      background-size: 100%;
+
+      .content-container-content {
+        background: url(../img/background-single-floor-320.png) repeat-y top center;
+        background-size: 100%;
+      }
+    }
+    @include bp("eight") {
+      background: url(../img/background-city-mountains-480.jpg) no-repeat bottom left;
+      background-size: 100%;
+
+      .content-container-content {
+        background: url(../img/background-single-floor-480.png) repeat-y top center;
+        background-size: 100%;
+      }
+    }
+    @include bp("twelve") {
+      background: url(../img/background-city-mountains-768.jpg) no-repeat bottom left;
+      background-size: 100%;
+
+      .content-container-content {
+        background: url(../img/background-single-floor-768.png) repeat-y top center;
+        background-size: 100%;
+      }
+    }
+    @include bp("sixteen") {
+      background: url(../img/background-city-mountains.jpg) no-repeat bottom left;
+      background-size: 100%;
+
+      .content-container-content {
+        background: url(../img/background-single-floor-940.png) repeat-y top center;
+        background-size: 100%;
+      }
+    }
+  }
+
+  .the-floor {
+    .room-text {
+      opacity: 0;
+      @include transition(opacity .5s 1.5s);
+    }
+    &.active {
+      .room-text {
+        opacity: 1;
+      }
+    }
+  }
+}

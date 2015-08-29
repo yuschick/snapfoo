@@ -1,0 +1,27 @@
+// Mixin to deal with Media Queries inside of SCSS, rather than having seperate stylesheets for each
+@mixin bp($point) {
+    @if $point == six {
+      @media screen and (min-width: 320px) { @content; }
+    }
+	@if $point == eight {
+		@media screen and (min-width: 480px) { @content; }
+	}
+	@else if $point == twelve {
+		@media screen and (min-width: 768px) { @content; }
+	}
+	@else if $point == sixteen {
+		@media screen and (min-width: 940px) { @content; }
+	}
+}
+
+@mixin csspie {
+	.lt-ie10 & {
+		behavior: url(/4760/lib/css/PIE.htc);
+	}
+}
+
+%hidetext {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
