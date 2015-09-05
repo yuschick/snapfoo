@@ -92,7 +92,7 @@ function snapFoo(theSVGContainerID) {
                  * @param {Object} theAttrValues
                  */
                 var s = Snap.select(theSVGContainerID),
-                    theSVGElement = s.select(theElement);
+                    theSVGElement = s.selectAll(theElement);
 
                 theSVGElement.attr(theAttrValues);
             },

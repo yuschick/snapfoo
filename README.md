@@ -5,6 +5,9 @@ SnapFoo is a lightweight (~4k minified) animation library that compliments Snap.
 ####Documentation 
 [SnapFoo Documentation](http://yuschick.github.io/SnapFoo/)
 
+####Release Notes (V1.01)
+Updated the .set() function to accept a selector containing a group of elements.
+
 ####Get Started 
 
 Download SnapFoo and include it in your project after jQuery and Snap.svg. Once included, call the library for use:
