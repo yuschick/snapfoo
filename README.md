@@ -5,6 +5,10 @@ SnapFoo is a lightweight (~4k minified) animation library that compliments Snap.
 ####Documentation 
 [SnapFoo Documentation](http://yuschick.github.io/SnapFoo/)
 
+####Release Notes (V1.02)
++ If an element has an ID, use that as the identifier instead of assigning a class to help minimize conflicts of numerous separate animations per page.
++ Slight performance enhancements.
+
 ####Release Notes (V1.01)
 Updated the .set() function to accept a selector containing a group of elements.
 
