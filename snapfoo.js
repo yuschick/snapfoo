@@ -130,12 +130,17 @@ function snapFoo(theSVGContainerID) {
                 }, theDelay);
 
                 if (theElement in theAnimatingElementsObj) {
-                    theAnimatingElementsObj[theElement].frameProgress++;
+                    var frameProgress = theAnimatingElementsObj[theElement].frameProgress,
+                        totalFrames = theAnimatingElementsObj[theElement].totalFrames,
+                        doLoop = theAnimatingElementsObj[theElement].doLoop,
+                        loopsCompleted = theAnimatingElementsObj[theElement].loopsCompleted;
 
-                    if (theAnimatingElementsObj[theElement].frameProgress >= theAnimatingElementsObj[theElement].totalFrames) {
-                        if (theAnimatingElementsObj[theElement].doLoop) {
-                            theAnimatingElementsObj[theElement].frameProgress = 0;
-                            theAnimatingElementsObj[theElement].loopsCompleted++;
+                    frameProgress++;
+
+                    if (frameProgress >= totalFrames) {
+                        if (doLoop) {
+                            frameProgress = 0;
+                            loopsCompleted++;
                         }
                     }
                 }
@@ -194,19 +199,26 @@ function snapFoo(theSVGContainerID) {
                     if (theCurrentFrame > 0) { theAnimationDelay = 0; }
 
                     setTimeout(function() {
-                        var i=0;
+                        var i= 0,
+                            theID,
+                            theIdentifier,
+                            theCurrentClass;
+
                         $(theElement).each(function() {
                             if ($(this).parents(theSVGContainerID).length) {
-                                if (!$(this).is('[class^="sf"]')) {
-                                    var theCurrentClass = $(this).attr("class"),
+                                theID = $(this).attr("id");
+                                if (!theID) {
+                                    if (!$(this).is('[class^="sf"]')) {
+                                        theCurrentClass = $(this).attr("class");
                                         theIdentifier = "sf" + i + " "+ theCurrentClass;
-
-                                    $(this).attr("class", theIdentifier);
+                                        $(this).attr("class", theIdentifier);
+                                    } else {
+                                        theIdentifier = $(this).attr("class");
+                                    }
+                                    theIdentifier = "." + theIdentifier.replace(" ",".");
                                 } else {
-                                    var theIdentifier = $(this).attr("class");
+                                    theIdentifier = "#" + theID;
                                 }
-
-                                theIdentifier = "." + theIdentifier.replace(" ",".");
 
                                 if (theKeyframeOptions.keyframeCallback) {
                                     theKeyframeCallback = {
@@ -254,12 +266,12 @@ function snapFoo(theSVGContainerID) {
                     curX = thisBox.x + (thisBox.width/2),
                     curY = thisBox.y + (thisBox.height/2),
                     theMovePoint,
-                    reversePathDirection = reversePathDirection || false,
-                    reverseAtEnd = reverseAtEnd || false,
+                    theReversePathDirection = reversePathDirection || false,
+                    theReverseAtEnd = reverseAtEnd || false,
                     theStartPoint = 0,
                     theEndPoint = theLength;
 
-                    if (reversePathDirection) {
+                    if (theReversePathDirection) {
                         theStartPoint = theLength;
                         theEndPoint = 0;
                     }
@@ -272,7 +284,7 @@ function snapFoo(theSVGContainerID) {
 
                         if (theCallback) { theCallback(); }
 
-                        if (reverseAtEnd) {
+                        if (theReverseAtEnd) {
                             setTimeout(function() {
                                 Snap.animate(theEndPoint, theStartPoint, function(value) {
                                     theMovePoint = theSnapPath.getPointAtLength(value);
@@ -354,19 +366,26 @@ function snapFoo(theSVGContainerID) {
                 };
 
                 setTimeout(function() {
-                    var i=0;
+                    var i=0,
+                        theID,
+                        theIdentifier,
+                        theCurrentClass;
+
                     $(theElement).each(function() {
                         if ($(this).parents(theSVGContainerID).length) {
-                            if (!$(this).is('[class^="sf"]')) {
-                                var theCurrentClass = $(this).attr("class"),
+                            theID = $(this).attr("id");
+                            if (!theID) {
+                                if (!$(this).is('[class^="sf"]')) {
+                                    theCurrentClass = $(this).attr("class");
                                     theIdentifier = "sf" + i + " "+ theCurrentClass;
-
-                                $(this).attr("class", theIdentifier);
+                                    $(this).attr("class", theIdentifier);
+                                } else {
+                                    theIdentifier = $(this).attr("class");
+                                }
+                                theIdentifier = "." + theIdentifier.replace(" ",".");
                             } else {
-                                theIdentifier = $(this).attr("class");
+                                theIdentifier = "#" + theID;
                             }
-
-                            theIdentifier = "." + theIdentifier.replace(" ",".");
 
                             if(!(theIdentifier in theAnimatingElementsObj)) {
                                 theAnimatingElementsObj[theIdentifier] = {loopsCompleted: 0, totalLoops: theLoopCount, intervalID: 0, theDelay: (theStagger*i)};
@@ -389,7 +408,6 @@ function snapFoo(theSVGContainerID) {
                                 theAnimatingElementsObj[theIdentifier].intervalID = thePathLoopIntervalIDs;
                             }
                         }
-
                     });
                 }, theDelay);
             }
