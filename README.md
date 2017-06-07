@@ -19,7 +19,7 @@ npm install snapfoo --save
 + Performance and various updates including ~newer jQuery features for SVG class manipulation
 + Better support and features for path animations
 + Updated support for multiple animations and classes within a single SVG container
-+ General overhaul and orgination of features and naming
++ General overhaul and organization of features and naming
 + Removed intervals for looping
 + Removed stop(), set(), and clear() methods
 
