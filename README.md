@@ -1,8 +1,8 @@
-## SnapFoo
+![SnapFoo Logo](http://yuschick.github.io/SnapFoo/lib/img/snapfoo-logo.png)
 
-SnapFoo is a lightweight (~5k minified) animation library that compliments Snap.svg. The focus of SnapFoo is to simplify bringing elaborate scenes of SVG animations and interactions to life.
+SnapFoo is a lightweight (~4.5k minified) animation library that compliments Snap.svg. The focus of SnapFoo is to simplify bringing elaborate scenes of SVG animations and interactions to life.
 
-#### Documentation
+### Documentation
 [SnapFoo Documentation](http://yuschick.github.io/SnapFoo/)
 
 #### Release Notes (V2.1)
@@ -33,7 +33,9 @@ npm install snapfoo --save
 **Manual**  
 Download SnapFoo and include the `./dist/` build in your project after jQuery and Snap.svg. Once included, call the library for use:
 
-`const snapfoo = snapFoo("#theSVGContainer");`
+```js
+const snapfoo = snapFoo("#theSVGContainer");
+```
 
 #### SnapFoo Calls
 + **snapfoo.animate()**: The primary animation call that receives an element or group of elements to animate based on theFramesObj object. Any element to be animated that does not already have an ID is appended the class "sf#" for a unique identifier.
