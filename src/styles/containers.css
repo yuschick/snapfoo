@@ -1,0 +1,86 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+  width: 100%; }
+
+@media screen and (max-width: 800px) {
+  .container.flex-container {
+    flex-direction: column; } }
+
+.flex-container {
+  display: flex; }
+  .flex-container.at-end {
+    justify-content: flex-end; }
+  .flex-container.is-spread {
+    justify-content: space-between; }
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column; }
+  .flex-container-column.is-centered {
+    align-content: center;
+    justify-content: center; }
+
+.flex-one {
+  flex: 1; }
+
+.flex-two {
+  flex: 2; }
+
+.flex-three {
+  flex: 3; }
+
+.flex-four {
+  flex: 4; }
+
+.flex-five {
+  flex: 5; }
+
+@media screen and (max-width: 500px) {
+  .flex-container .flex-five,
+  .flex-container .flex-four,
+  .flex-container .flex-one,
+  .flex-container .flex-three,
+  .flex-container .flex-two {
+    flex: 1 0 auto; } }
+
+.header-watch-container {
+  height: 250px;
+  margin: 0 auto 0.5rem;
+  width: 250px; }
+
+.guide-watch-container {
+  height: 400px;
+  margin: 0 auto 0.5rem;
+  width: 400px; }
+
+.complication-container {
+  color: #EFF1F3;
+  flex-direction: row; }
+  @media screen and (max-width: 700px) {
+    .complication-container {
+      flex-direction: column; }
+      .complication-container .flex-one:first-child {
+        margin-bottom: 1rem; } }
+
+.docs-container {
+  padding: 1rem 1rem; }
+  .docs-container.fixed-nav {
+    margin-left: 250px;
+    /* the width of the docs tree */ }
+    @media screen and (max-width: 800px) {
+      .docs-container.fixed-nav {
+        margin-left: 0; } }
+
+.panel {
+  display: block;
+  padding: 3rem 1rem;
+  position: relative;
+  width: 100%; }
+
+.panel + .panel {
+  padding: 2rem 1rem; }
+
+.panel .panel {
+  padding-bottom: 0; }

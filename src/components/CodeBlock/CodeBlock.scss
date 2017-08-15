@@ -1,0 +1,38 @@
+@import './../../styles/variables.scss';
+
+.code-block-container {
+  background: $primaryColor;
+  color: $tertiaryColor;
+  margin: 0 auto 1rem;
+  max-width: 500px;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.complication {
+    background: $primaryColor;
+    margin-top: $vspace;
+    max-width: none;
+
+    pre {
+      border: 0;
+    }
+  }
+
+  code {
+    display: inline-block;
+    padding: $vspace/2 $hspace;
+  }
+}
+
+.prettyprint {
+  background: $primaryColor;
+  margin: 0 auto 1rem;
+  padding: $vspace $hspace;
+
+  code {
+    padding: 0;
+  }
+}

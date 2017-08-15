@@ -1,0 +1,65 @@
+.complication-demo {
+  text-align: center;
+
+  svg {
+    max-width: 300px;
+  }
+}
+
+.origin-bc {
+  transform-origin: bottom center;
+}
+
+.origin-center {
+  transform-origin: center center;
+}
+
+.primary-center {
+  transform-origin: 125px 125px;
+}
+
+.secondary-center {
+  transform-origin: 125px 180px;
+}
+
+.three-center {
+  transform-origin: 190px 125px;
+}
+
+.day-center {
+  transform-origin: 164px 125px;
+}
+
+.perpetual-day-center {
+  transform-origin: 176.2px 132.2px;
+}
+
+.perpetual-date-center {
+  transform-origin: 109.4px 132.1px;
+}
+
+.perpetual-month-center {
+  transform-origin: 124.4px 116.9px;
+}
+
+.perpetual-year-center {
+  transform-origin: 125px 190px;
+}
+
+#blackout {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &.active {
+    opacity: 0.8;
+  }
+}
+
+#the-crown {
+  transform: translate(0,0);
+  transition: transform 0.5s ease;
+
+  &.active {
+    transform: translate(3px, 5px);
+  }
+}

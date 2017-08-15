@@ -1,0 +1,15 @@
+@import './../../styles/variables.scss';
+@import './../../styles/mixins.scss';
+
+.main-header {
+  background: $secondaryColor;
+  border-bottom: 3px solid $primaryColor;
+  padding: 0 $hspace;
+  @include bp(800) {
+    padding: $vspace $hspace;
+  }
+
+  .flex-container {
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+@import './../../styles/variables.scss';
+
+.btn {
+  display: inline-block;
+  padding: $vspace/2 $hspace;
+  text-align: center;
+  text-decoration: none;
+
+  + .btn {
+    margin-left: $hspace;
+  }
+
+  &.primary {
+    background: #474747;
+    background: -moz-linear-gradient(top, #474747 0%, #272727 100%);
+    background: -webkit-linear-gradient(top, #474747 0%,#272727 100%);
+    background: linear-gradient(to bottom, #474747 0%,#272727 100%);
+    color: $tertiaryColor;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#474747', endColorstr='#272727',GradientType=0 );
+
+    &:hover {
+      background: #474747;
+      background: -moz-linear-gradient(top, #474747 0%, #070707 100%);
+      background: -webkit-linear-gradient(top, #474747 0%,#070707 100%);
+      background: linear-gradient(to bottom, #474747 0%,#070707 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#474747', endColorstr='#070707',GradientType=0 );
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@mixin bp($val) {
+   @media screen and (max-width: #{$val}px){
+    @content;
+  }
+}

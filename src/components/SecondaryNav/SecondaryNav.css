@@ -1,0 +1,15 @@
+.secondary-nav {
+  background: #272727;
+  margin: 0.5rem 0; }
+  .secondary-nav .flex-container {
+    flex-wrap: wrap; }
+  .secondary-nav li {
+    border-right: 1px solid #000;
+    color: #EFF1F3;
+    cursor: pointer;
+    padding: 0.5rem 1rem; }
+    .secondary-nav li.active {
+      background: #EFF1F3;
+      color: #272727; }
+    .secondary-nav li:last-child {
+      border: 0; }

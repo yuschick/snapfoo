@@ -1,0 +1,16 @@
+@import './../../styles/variables.scss';
+
+.doc-specs {
+  background: darken($tertiaryColor, 2.5%);
+  font-size: 0.9rem;
+  margin: 5px 0;
+  padding: 0.5rem;
+
+  div {
+    margin-right: $hspace;
+  }
+}
+
+.doc-property-container {
+  margin-bottom: $vspace*2;
+}

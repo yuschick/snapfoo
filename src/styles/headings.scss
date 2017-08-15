@@ -1,0 +1,41 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+h1 {
+  color: $secondaryColor;
+  font: 5.5rem/1.15 $secondaryFont;
+  text-transform: uppercase;
+
+  span {
+    color: $primaryColor;
+  }
+  @include bp(500) {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  color: $tertiaryColor;
+  font: 1.75rem/1 $secondaryFont;
+  text-transform: uppercase;
+
+  span {
+    color: $primaryColor;
+  }
+  @include bp(500) {
+    font-size: 1.25rem;
+  }
+}
+
+h3 {
+  font: 1.5rem/1 $primaryFont;
+}
+
+h4 {
+  font: 1.5rem/1.5 $primaryFont;
+  text-transform: uppercase;
+}
+
+h5 {
+  font: 1.25rem/1.25 $primaryFont;
+}

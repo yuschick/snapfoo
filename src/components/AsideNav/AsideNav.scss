@@ -1,0 +1,68 @@
+@import './../../styles/variables.scss';
+@import './../../styles/mixins.scss';
+
+.aside-nav-container {
+  background: $tertiaryColor;
+  top: 0;
+  width: 250px;
+}
+@include bp(800) {
+  .aside-nav-container {
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+}
+
+.aside-nav {
+  padding: $vspace 0;
+}
+
+.menu-group {
+  cursor: pointer;
+
+  &.active .guide {
+    background: $secondaryColor;
+    color: $tertiaryColor;
+  }
+}
+
+.group-header {
+  background: $secondaryColor;
+  color: $tertiaryColor;
+  display: block;
+  font-size: 1rem;
+  padding: $vspace/5 $hspace/2;
+  text-transform: uppercase;
+
+  &.guide {
+    background: transparent;
+    color: $primaryColor;
+  }
+}
+
+.main-menu li {
+  margin-bottom: $vspace/5;
+}
+
+.sub-menu {
+  display: none;
+  font-size: 0.9rem;
+  margin-bottom: $vspace/2;
+}
+
+li.active .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  font-size: 0.9rem;
+  padding: $vspace/4 0 $vspace/4 $hspace;
+
+  &:nth-child(even) {
+    background: darken($tertiaryColor, 2.5%);
+  }
+
+  a {
+    display: block;
+  }
+}

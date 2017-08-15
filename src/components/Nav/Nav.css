@@ -1,0 +1,11 @@
+.primary-nav li {
+  color: #EFF1F3;
+  text-transform: uppercase; }
+  @media screen and (max-width: 800px) {
+    .primary-nav li {
+      margin-top: 0.5rem; } }
+  .primary-nav li a {
+    display: inline-block;
+    padding: 1rem 1rem; }
+    .primary-nav li a.active {
+      background: #272727; }

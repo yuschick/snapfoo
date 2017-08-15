@@ -1,0 +1,10 @@
+.doc-specs {
+  background: #e8ebee;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  padding: 0.5rem; }
+  .doc-specs div {
+    margin-right: 1rem; }
+
+.doc-property-container {
+  margin-bottom: 2rem; }

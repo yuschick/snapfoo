@@ -1,0 +1,21 @@
+@import './../../styles/variables.scss';
+@import './../../styles/mixins.scss';
+
+.primary-nav {
+  li {
+    color: $tertiaryColor;
+    text-transform: uppercase;
+    @include bp(800) {
+      margin-top: $vspace/2;
+    }
+
+    a {
+      display: inline-block;
+      padding: $vspace $hspace;
+
+      &.active {
+        background: $primaryColor;
+      }
+    }
+  }
+}

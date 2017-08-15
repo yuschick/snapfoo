@@ -1,0 +1,9 @@
+.main-header {
+  background: #e86025;
+  border-bottom: 3px solid #272727;
+  padding: 0 1rem; }
+  @media screen and (max-width: 800px) {
+    .main-header {
+      padding: 1rem 1rem; } }
+  .main-header .flex-container {
+    align-items: center; }

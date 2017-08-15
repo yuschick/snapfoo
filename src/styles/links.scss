@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+a,
+a:active,
+a:visited {
+  color: $secondaryColor;
+
+  &.invert {
+    color: $tertiaryColor;
+  }
+}
+
+a:hover {
+  color: lighten($secondaryColor, 5%);
+
+  &.invert {
+    color: lighten($tertiaryColor, 5%);
+  }
+}
+
+h2 {
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+nav {
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,26 @@
+@import './../../styles/variables.scss';
+
+.secondary-nav {
+  background: $primaryColor;
+  margin: $vspace/2 0;
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  li {
+    border-right: 1px solid #000;
+    color: $tertiaryColor;
+    cursor: pointer;
+    padding: $vspace/2 $hspace;
+
+    &.active {
+      background: $tertiaryColor;
+      color: $primaryColor;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}

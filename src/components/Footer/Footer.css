@@ -1,0 +1,14 @@
+footer {
+  background: #272727;
+  color: #EFF1F3;
+  font-size: 0.85rem;
+  padding: 1rem 1rem; }
+  footer div {
+    flex: 1 0 auto; }
+    footer div:last-child {
+      text-align: right; }
+  footer a,
+  footer a:active,
+  footer a:hover,
+  footer a:visited {
+    color: #EFF1F3; }

@@ -1,0 +1,119 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+  width: 100%;
+}
+
+.container.flex-container {
+  @include bp(800) {
+    flex-direction: column;
+  }
+}
+
+.flex-container {
+  display: flex;
+
+  &.at-end {
+    justify-content: flex-end;
+  }
+
+  &.is-spread {
+    justify-content: space-between;
+  }
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  &.is-centered {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.flex-two {
+  flex: 2;
+}
+
+.flex-three {
+  flex: 3;
+}
+
+.flex-four {
+  flex: 4;
+}
+
+.flex-five {
+  flex: 5;
+}
+@include bp(500) {
+  .flex-container {
+    .flex-five,
+    .flex-four,
+    .flex-one,
+    .flex-three,
+    .flex-two {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.header-watch-container {
+  height: 250px;
+  margin: 0 auto $vspace/2;
+  width: 250px;
+}
+
+.guide-watch-container {
+  height: 400px;
+  margin: 0 auto $vspace/2;
+  width: 400px;
+}
+
+.complication-container {
+  color: $tertiaryColor;
+  flex-direction: row;
+  @include bp(700) {
+    flex-direction: column;
+
+    .flex-one:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.docs-container {
+  padding: $vspace $hspace;
+
+  &.fixed-nav {
+    margin-left: 250px;
+    /* the width of the docs tree */
+    @include bp(800) {
+      margin-left: 0;
+    }
+  }
+}
+
+.panel {
+  display: block;
+  padding: $vspace*3 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.panel + .panel {
+  padding: $vspace*2 1rem;
+}
+
+.panel .panel {
+  padding-bottom: 0;
+}

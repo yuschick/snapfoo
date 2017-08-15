@@ -1,0 +1,23 @@
+@import './../../styles/variables.scss';
+
+footer {
+  background: $primaryColor;
+  color: $tertiaryColor;
+  font-size: 0.85rem;
+  padding: $vspace $hspace;
+
+  div {
+    flex: 1 0 auto;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $tertiaryColor;
+  }
+}

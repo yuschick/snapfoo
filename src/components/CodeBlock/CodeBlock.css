@@ -1,0 +1,24 @@
+.code-block-container {
+  background: #272727;
+  color: #EFF1F3;
+  margin: 0 auto 1rem;
+  max-width: 500px;
+  width: 100%; }
+  .code-block-container:last-child {
+    margin-bottom: 0; }
+  .code-block-container.complication {
+    background: #272727;
+    margin-top: 1rem;
+    max-width: none; }
+    .code-block-container.complication pre {
+      border: 0; }
+  .code-block-container code {
+    display: inline-block;
+    padding: 0.5rem 1rem; }
+
+.prettyprint {
+  background: #272727;
+  margin: 0 auto 1rem;
+  padding: 1rem 1rem; }
+  .prettyprint code {
+    padding: 0; }

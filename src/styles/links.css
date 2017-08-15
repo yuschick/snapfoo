@@ -1,0 +1,27 @@
+a,
+a:active,
+a:visited {
+  color: #e86025; }
+  a.invert,
+  a:active.invert,
+  a:visited.invert {
+    color: #EFF1F3; }
+
+a:hover {
+  color: #ea713c; }
+  a:hover.invert {
+    color: #fefefe; }
+
+h2 a,
+h2 a:active,
+h2 a:hover,
+h2 a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+nav a,
+nav a:active,
+nav a:hover,
+nav a:visited {
+  color: inherit;
+  text-decoration: none; }
