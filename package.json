@@ -23,7 +23,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
-    "snapfoo": "^2.1.2"
+    "snapfoo": "^2.1.3"
   },
   "lint-staged": {
     "*.js": [

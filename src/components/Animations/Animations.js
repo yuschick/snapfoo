@@ -9,17 +9,20 @@ class Animations extends Component {
 
     this.getHeaderAnimation = this.getHeaderAnimation.bind(this);
     this.buildWatchsettings = this.buildWatchsettings.bind(this);
+    this.SnapFoo = null;
   }
 
   componentDidMount() {
-    this.SnapFoo = snapFoo(`#${this.props.parent}`);
-    this.buildWatchsettings();
+    setTimeout(() => {
+      this.buildWatchsettings();
+    }, 2500);
   }
 
   buildWatchsettings() {
     let settings = null;
     let element;
     let finalbuild;
+    this.SnapFoo = snapFoo(`#${this.props.parent}`);
 
     switch (this.props.type) {
       case 'header':
@@ -29,7 +32,7 @@ class Animations extends Component {
           loop: true,
           path: '#path-one'
         };
-        console.log(snapFoo);
+        finalbuild = this.SnapFoo.animatePath(element, settings);
         break;
       default:
         return false;
