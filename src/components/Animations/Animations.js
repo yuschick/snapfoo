@@ -13,32 +13,32 @@ class Animations extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.buildWatchsettings();
-    }, 2500);
+    this.buildWatchsettings();
   }
 
   buildWatchsettings() {
     let settings = null;
     let element;
-    let finalbuild;
+    let type;
+    let callback = null;
     this.SnapFoo = snapFoo(`#${this.props.parent}`);
 
     switch (this.props.type) {
       case 'header':
+        type = 'animatePath';
         element = '#ball-one';
         settings = {
           duration: 2500,
           loop: true,
           path: '#path-one'
         };
-        finalbuild = this.SnapFoo.animatePath(element, settings);
         break;
+
       default:
         return false;
     }
 
-    return finalbuild;
+    return this.SnapFoo[type](element, settings, callback);
   }
 
   getHeaderAnimation() {
