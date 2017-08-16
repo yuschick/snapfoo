@@ -28,245 +28,147 @@ class Docs extends Component {
           ],
         },
         {
-          header: 'Calendars',
+          header: 'Animate',
           active: false,
           items: [
             {
-              label: 'Date - Overview',
-              anchor: 'date-overview',
+              label: 'Element',
+              anchor: 'animate-element',
             },
             {
-              label: 'Date - Define the Indicator',
-              anchor: 'date-definetheindicator',
+              label: 'FramesObj',
+              anchor: 'animate-framesobj',
             },
             {
-              label: 'Date - Define a Split Display',
-              anchor: 'date-defineasplitdisplay',
+              label: 'FramesObj .frames',
+              anchor: 'animate-framesobj-frames',
             },
             {
-              label: 'Date - Retrograde Display',
-              anchor: 'date-retrogradedisplay',
+              label: 'FramesObj .frames.props',
+              anchor: 'animate-framesobj-framesprops',
             },
             {
-              label: 'Day - Overview',
-              anchor: 'day-overview',
+              label: 'FramesObj .frames.delay',
+              anchor: 'animate-framesobj-framesdelay',
             },
             {
-              label: 'Day - Define the Indicator',
-              anchor: 'day-definetheindicator',
+              label: 'FramesObj .frames.duration',
+              anchor: 'animate-framesobj-framesduration',
             },
             {
-              label: 'Day - Offset Hours',
-              anchor: 'day-offsethours',
+              label: 'FramesObj .frames.easing',
+              anchor: 'animate-framesobj-frameseasing',
             },
             {
-              label: 'Month - Overview',
-              anchor: 'month-overview',
+              label: 'FramesObj .callbackAt',
+              anchor: 'animate-framesobj-callbackat',
             },
             {
-              label: 'Month - Define the Indicator',
-              anchor: 'month-definetheindicator',
+              label: 'FramesObj .delay',
+              anchor: 'animate-framesobj-delay',
             },
             {
-              label: 'Year - Overview',
-              anchor: 'year-overview',
+              label: 'FramesObj .duration',
+              anchor: 'animate-framesobj-duration',
             },
             {
-              label: 'Year - Define the Indicator',
-              anchor: 'year-definetheindicator',
+              label: 'FramesObj .easing',
+              anchor: 'animate-framesobj-easing',
             },
             {
-              label: 'Year - Offset Months',
-              anchor: 'year-offsetmonths',
+              label: 'FramesObj .loop',
+              anchor: 'animate-framesobj-loop',
             },
+            {
+              label: 'FramesObj .loopCount',
+              anchor: 'animate-framesobj-loopcount',
+            },
+            {
+              label: 'FramesObj .reset',
+              anchor: 'animate-framesobj-reset',
+            },
+            {
+              label: 'FramesObj .stagger',
+              anchor: 'animate-framesobj-stagger',
+            },
+            {
+              label: 'Callback',
+              anchor: 'animate-callback',
+            }
           ],
         },
         {
-          header: 'Chronograph',
+          header: 'AnimatePath',
           active: false,
           items: [
             {
-              label: 'Overview',
-              anchor: 'chronograph-overview',
+              label: 'Element',
+              anchor: 'animatepath-element',
             },
             {
-              label: 'Define the Hands',
-              anchor: 'chronograph-definethehands',
+              label: 'Options',
+              anchor: 'animatepath-options',
             },
             {
-              label: 'Define the Buttons',
-              anchor: 'chronograph-definethebuttons',
+              label: 'Options .callbackAt',
+              anchor: 'animatepath-options-callbackat',
             },
             {
-              label: 'Flyback Chronograph',
-              anchor: 'chronograph-flyback',
+              label: 'Options .delay',
+              anchor: 'animatepath-options-delay',
             },
             {
-              label: 'Button Active States',
-              anchor: 'chronograph-activestates',
-            },
-          ],
-        },
-        {
-          header: 'Day/Night Indicator',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'day-night-overview',
+              label: 'Options .duration',
+              anchor: 'animatepath-options-duration',
             },
             {
-              label: 'Define the Indicator',
-              anchor: 'day-night-definetheindicator',
+              label: 'Options .easing',
+              anchor: 'animatepath-options-easing',
             },
             {
-              label: 'Target a Specific Dial',
-              anchor: 'day-night-targetaspecificdial',
+              label: 'Options .loop',
+              anchor: 'animatepath-options-loop',
             },
             {
-              label: 'Invert the Direction',
-              anchor: 'day-night-invertthedirection',
-            },
-          ],
-        },
-        {
-          header: 'Dials',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'dials-overview',
+              label: 'Options .loopCount',
+              anchor: 'animatepath-options-loopcount',
             },
             {
-              label: 'Define a Dial',
-              anchor: 'dials-defineadial',
+              label: 'Options .path',
+              anchor: 'animatepath-options-path',
             },
             {
-              label: 'Dial Names',
-              anchor: 'dials-dialnames',
+              label: 'Options .reset',
+              anchor: 'animatepath-options-reset',
             },
             {
-              label: 'Define the Hands',
-              anchor: 'dials-definethehands',
+              label: 'Options .rewind',
+              anchor: 'animatepath-options-rewind',
             },
             {
-              label: 'GMT Offsets',
-              anchor: 'dials-gmtoffsets',
+              label: 'Options .rewindDelay',
+              anchor: 'animatepath-options-rewinddelay',
             },
             {
-              label: 'Defining a Timezone',
-              anchor: 'dials-timezone',
+              label: 'Options .rewindDuration',
+              anchor: 'animatepath-options-rewindduration',
             },
             {
-              label: '12/24-Hour Formats',
-              anchor: 'dials-hourformats',
+              label: 'Options .rewindEasing',
+              anchor: 'animatepath-options-rewindeasing',
             },
             {
-              label: 'Sweeping Seconds',
-              anchor: 'dials-sweepingseconds',
+              label: 'Options .reverse',
+              anchor: 'animatepath-options-reverse',
             },
             {
-              label: 'Multiple Dials',
-              anchor: 'dials-multipledials',
-            },
-          ],
-        },
-        {
-          header: 'Manual Time (Crown)',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'crown-overview',
+              label: 'Options .stagger',
+              anchor: 'animatepath-options-stagger',
             },
             {
-              label: 'Define the Crown',
-              anchor: 'crown-definethecrown',
-            },
-            {
-              label: 'Crown Active States',
-              anchor: 'crown-activestates',
-            },
-            {
-              label: 'Watch Keybindings',
-              anchor: 'crown-keybindings',
-            },
-          ],
-        },
-        {
-          header: 'Minute Repeater',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'minute-repeater-overview',
-            },
-            {
-              label: 'Define the Trigger',
-              anchor: 'minute-repeater-definethetrigger',
-            },
-            {
-              label: 'Define the Chimes',
-              anchor: 'minute-repeater-definethechimes',
-            },
-            {
-              label: 'Target a Specific Dial',
-              anchor: 'minute-repeater-targetaspecificdial',
-            },
-          ],
-        },
-        {
-          header: 'Moonphase',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'moonphase-overview',
-            },
-            {
-              label: 'Define the Element',
-              anchor: 'moonphase-definetheelement',
-            },
-            {
-              label: 'Invert the Direction',
-              anchor: 'moonphase-invert',
-            },
-          ],
-        },
-        {
-          header: 'Power Reserve',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'power-reserve-overview',
-            },
-            {
-              label: 'Define the Element',
-              anchor: 'power-reserve-definetheelement',
-            },
-            {
-              label: 'Setting the Range of Motion',
-              anchor: 'power-reserve-rangeofmotion',
-            },
-          ],
-        },
-        {
-          header: 'Watch',
-          active: false,
-          items: [
-            {
-              label: 'Overview',
-              anchor: 'watch-overview',
-            },
-            {
-              label: 'Default Keybindings',
-              anchor: 'watch-keybindings',
-            },
-            {
-              label: 'Default Intervals',
-              anchor: 'watch-intervals',
-            },
+              label: 'Callback',
+              anchor: 'animatepath-callback',
+            }
           ],
         },
       ],
@@ -303,14 +205,8 @@ class Docs extends Component {
 
   checkScrollPosition(pos) {
     const gettingStarted = this.gettingStartedSection;
-    const calendarSection = this.calendarsSection;
-    const chronographSection = this.chronographSection;
-    const indicatorSection = this.dayNightSection;
-    const dialsSection = this.dialsSection;
-    const crownSection = this.crownSection;
-    const repeaterSection = this.repeaterSection;
-    const moonphaseSection = this.moonphaseSection;
-    const reserveSection = this.reserveSection;
+    const animateSection = this.animateSection;
+    const animatePathSection = this.animatePathSection;
 
     if (pos >= 57) {
       this.setState({fixed: true});
@@ -320,24 +216,10 @@ class Docs extends Component {
 
     if (pos < gettingStarted.offsetTop + gettingStarted.clientHeight) {
       this.toggleDocTreeGroups('getting-started');
-    } else if (pos > gettingStarted.offsetTop + gettingStarted.clientHeight && pos < calendarSection.offsetTop + calendarSection.clientHeight) {
-      this.toggleDocTreeGroups('calendars');
-    } else if (pos > calendarSection.offsetTop + calendarSection.clientHeight && pos < chronographSection.offsetTop + chronographSection.clientHeight) {
-      this.toggleDocTreeGroups('chronograph');
-    } else if (pos > chronographSection.offsetTop + chronographSection.clientHeight && pos < indicatorSection.offsetTop + indicatorSection.clientHeight) {
-      this.toggleDocTreeGroups('day-night-indicator');
-    } else if (pos > indicatorSection.offsetTop + indicatorSection.clientHeight && pos < dialsSection.offsetTop + dialsSection.clientHeight) {
-      this.toggleDocTreeGroups('dials');
-    } else if (pos > dialsSection.offsetTop + dialsSection.clientHeight && pos < crownSection.offsetTop + crownSection.clientHeight) {
-      this.toggleDocTreeGroups('manual-time (crown)');
-    } else if (pos > crownSection.offsetTop + crownSection.clientHeight && pos < repeaterSection.offsetTop + repeaterSection.clientHeight) {
-      this.toggleDocTreeGroups('minute-repeater');
-    } else if (pos > repeaterSection.offsetTop + repeaterSection.clientHeight && pos < moonphaseSection.offsetTop + moonphaseSection.clientHeight) {
-      this.toggleDocTreeGroups('moonphase');
-    } else if (pos > moonphaseSection.offsetTop + moonphaseSection.clientHeight && pos < reserveSection.offsetTop + reserveSection.clientHeight) {
-      this.toggleDocTreeGroups('power-reserve');
+    } else if (pos > gettingStarted.offsetTop + gettingStarted.clientHeight && pos < animateSection.offsetTop + animateSection.clientHeight) {
+      this.toggleDocTreeGroups('animate');
     } else {
-      this.toggleDocTreeGroups('watch');
+      this.toggleDocTreeGroups('animatepath');
     }
   }
 
@@ -371,822 +253,555 @@ class Docs extends Component {
           <section ref={section => this.gettingStartedSection = section}>
             <DocSection groupHeader='Getting Started' subHeader='Getting Started with Node.js' anchor='getting-started-overview'>
 
-              <p>Getting up and running with TickTock via NPM and Node.js is quick. First, install the package into your project.</p>
+              <p>Getting up and running with SnapFoo via NPM and Node.js is quick. First, install the package into your project.</p>
 
-              <CodeBlock lang='none'>{`yarn add ticktock-js --dev`}</CodeBlock>
-              <CodeBlock lang='none'>{`npm install ticktock-js --save-dev`}</CodeBlock>
+              <CodeBlock lang='none'>{`yarn add snapfoo --dev`}</CodeBlock>
+              <CodeBlock lang='none'>{`npm install snapfoo --save-dev`}</CodeBlock>
 
               <p>Include the package in your project.</p>
 
-              <CodeBlock>{`const Watch = require('ticktock-js')`}</CodeBlock>
+              <CodeBlock>{`const SnapFoo = require('snapfoo')`}</CodeBlock>
 
-              <p>Lastly, create the <span className='is-code-ref'>settings</span> object and instantiate the new Watch class.</p>
+              <p>Call the library and pass in the SVGContainer id. The SVGContainer should be the parent element which contains all the elements that will be animated. By specifying a parent container, using a selector like <span className="is-code'ref">circle</span> will find each circle element within the specific SVGContainer.</p>
+
+              <CodeBlock>{`const sceneOne = SnapFoo("#scene-one");`}</CodeBlock>
+
+              <p>Lastly, create the <span className='is-code-ref'>settings</span> object and pass that into SnapFoo to animate.</p>
 
               <CodeBlock>
   {`const settings = {
-  dials: [{
-    name: 'primary',
-    hands: {
-      hour: 'primary-hour-hand',
-      minute: 'primary-minute-hand',
-      second: 'primary-second-hand'
-    }
-  },
-  {
-    name: 'secondary',
-    hands: {
-      hour: 'secondary-hour-hand',
-      minute: 'secondary-minute-hand',
-      second: 'secondary-second-hand'
-    },
-    offset: '+4',
-    sweep: true
-  }],
-  reserve: {
-    id: 'power-reserve-hand',
-    range: [-90, 90]
-  }
+  xxxxxxxx
 };
-let demo = new Watch(settings);`}
+sceneOne.animate('.ball', settings [, Callback]);`}
               </CodeBlock>
             </DocSection>
           </section>
 
-          <section ref={section => this.calendarsSection = section}>
-            <DocSection groupHeader='Calendars' anchor='calendars-overview'>
-              <p>It is very common to find watches and clocks that display calendar information. Whether this is a simple date display or a full perpetual calendar which shows the month, date, day, and a year indicator to show the current year{String.fromCharCode(39)}s relation to
-              a leap year. TickTock supports all of these individual complications so any combination of such can be created.</p>
-            </DocSection>
-            <DocSection subHeader='Date - Overview' anchor='date-overview'>
-              <DocSpecs property='date' />
-              <p>Date indicators are used to show the current date of the month. They{String.fromCharCode(39)}re commonly paired with a Day Indicator and part of several date-related complications comprising annual and perpetual calendars.</p>
-              <p>TickTock expects the initial position of the indicator to be on the 1st. It will then rotate for each day from there.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  date: {
-    id: 'date-disc'
-  }
-};`}
-              </CodeBlock>
+          <section ref={section => this.animateSection = section}>
+            <DocSection groupHeader='Animate' anchor='animate-overview'>
+              <p>The primary animation call that receives an element or group of elements to animate based on the FramesObj object. Any element that is animated that does not have an ID is appended the class <span className='is-code-ref'>sf[#]</span> for a unique identifier.</p>
+              <CodeBlock>{`SnapFoo.animate(element, framesObj, callback);`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Date - Define the Indicator' anchor='date-definetheindicator'>
-              <DocSpecs property='id' type='String' required='True'/>
-              <p>The <span className='is-code-ref'>date</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the indicator element{String.fromCharCode(39)}s ID. The indicator{String.fromCharCode(39)}s initial position is expected to be on the 1st and will rotate clockwise for each day from there.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  date: {
-    id: 'date-disc'
-  }
-};`}
-              </CodeBlock>
+            <DocSection subHeader='Animate - Element' anchor='animate-element'>
+              <DocSpecs type='String' required='True' />
+              <p>Use a jQuery-like selector to target which elements should be animated. SnapFoo will iterate over any matches found inside of <span className='is-code-ref'>theSVGContainer</span>. Any element that is animated that does not have an ID is appended the class <span className='is-code-ref'>sf[#]</span> for a unique identifier.</p>
+              <p className='is-strong'>Target individual elements</p>
+              <CodeBlock>{`SnapFoo.animate("#the-circle", FramesObj);`}</CodeBlock>
+              <p className='is-strong'>Select numerous elements</p>
+              <CodeBlock>{`SnapFoo.animate(".the-circle, #the-square, .test-element", FramesObj);`}</CodeBlock>
+              <p className='is-strong'>Target elements by tag</p>
+              <CodeBlock>{`SnapFoo.animate("circle", FramesObj);`}</CodeBlock>
+              <p className='is-strong'>Use other selector types</p>
+              <CodeBlock>{`SnapFoo.animate("g > circle", FramesObj);`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Date - Define a Split Display' anchor='date-defineasplitdisplay'>
-              <DocSpecs property='split' />
-              <p>Some date displays are broken into two split discs. One disc shows the ones of the date ranging from 0 - 9 while the other shows the tenths, 0 - 3. Combined, these two split discs display the full date.</p>
-              <p>
-                TickTock supports this functionality with the <span className='is-code-ref'>split</span> object. By defining the IDs of the <span className='is-code-ref'>ones</span> and <span className='is-code-ref'>tenths</span> discs, TickTock will handle both
-                discs simultaneously. Both discs are expected to be initially placed in their 0 position.
-              </p>
-              <p>
-                Note that the <span className='is-code-ref'>Date</span> property accepts <span className='is-strong'>either</span> an <span className='is-code-ref'>id</span> or <span className='is-code-ref'>split</span> property. Including both will result in an error.
-              </p>
+            <DocSection subHeader='Animate - FramesObj' anchor='animate-framesobj'>
+              <DocSpecs required='True' />
+              <p>The <span className='is-code-ref'>FramesObj</span> object stores the animation properties and any additional options.</p>
+              <p className='is-strong'>Keys:</p>
+              <ul>
+               <li>FramesObj {Object}
+                <ul>
+                  <li>.frames {Array}
+                   <ul>
+                     <li>.frames.props {Object}</li>
+                     <li>.frames.delay {Number}</li>
+                     <li>.frames.duration {Number}</li>
+                     <li>.frames.easing {Function}</li>
+                     </ul>
+                  </li>
+                  <li>callbackAt {String}</li>
+                  <li>delay {Number}</li>
+                  <li>duration {Number}</li>
+                  <li>easing {Function}</li>
+                  <li>loop {Boolean}</li>
+                  <li>loopCount {Number}</li>
+                  <li>reset {Boolean}</li>
+                  <li>stagger {Number}</li>
+                </ul>
+               </li>
+              </ul>
+              <p>The minimum requirements include a <span className='is-code-ref'>.frames</span> entry with the <span className='is-code-ref'>.props</span> and <span className='is-code-ref'>.duration</span> set. The other keys are set to defaults if not supplied.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  date: {
-    split: {
-      ones: 'ones-disc',
-      tenths: 'tenths-disc'
-    }
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Date - Retrograde Display' anchor='date-retrogradedisplay'>
-              <DocSpecs property='retrograde' />
-              <p>Retrograde displays are slightly common as a way to tell the date without the use of a full, circular disc. A retrograde display consists of a hand that rotates along a partial circle and upon reaching the end it jumps back to its original position.</p>
-              <p>The <span className='is-code-ref'>retrograde</span> object supports one property, <span className='is-code-ref'>max</span>, which is a number. TickTock expects the indicator to be drawn at its starting position which will be treated as 0 degrees. The <span className='is-code-ref'>max</span> value defines how far the hand must rotate before reaching its end. The <span className='is-code-ref'>max</span> value will be divided by 31 and the indiator will be rotated according to that value per the date.</p>
-              <p>The <span className='is-code-ref'>max</span> property can be considered optional. If no value is assigned, TickTock will default to <span className='is-code-ref'>180</span>. Given this, the <span className='is-code-ref'>retrograde</span> property could be given a <span className='is-code-ref'>true</span> boolean value instead of an object.</p>
-              <p>
-                Note that the <span className='is-code-ref'>Date</span> property accepts <span className='is-strong'>either</span> a <span className='is-code-ref'>split</span> or <span className='is-code-ref'>retrograde</span> property. Including both will result in an error. When using the retrograde display, an <span className='is-code-ref'>id</span> property is value is still required.
-              </p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  date: {
-    id: 'date-arrow',
-    retrograde: {
-      max: 210
-    }
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Day - Overview' anchor='day-overview'>
-              <DocSpecs property='day' />
-              <p>The Day Indicator will display the name of the current day of the week. Commonly, this component is built as a rotating disc, as in the demo, but can also be represented with a rotating hand.</p>
-              <p>
-                The default behavior of TickTock is to rotate the day disc once every day to show the correct label beginning with Sunday. However, an additional setting,
-                <span className='is-code-ref'>offsetHours</span> can be used to rotate the element an additional amount for the current hour to visually represent the day{String.fromCharCode(39)}s progress.
-              </p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  day: {
-    id: 'day-indicator-disc',
-    offsetHours: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Day - Define the Indicator' anchor='day-definetheindicator'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>dayIndicator</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the indicator element{String.fromCharCode(39)}s ID.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  day: {
-    id: 'day-indicator-disc',
-    offsetHours: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Day - Offset the Hours' anchor='day-offsethours'>
-              <DocSpecs property='offset' type='Boolean' def='False' />
-              <p>While most indicators rotate once a day to depict the current label, some update regularly with the time to also indicate the progression through the day. Using the <span className='is-code-ref'>offsetHours</span> setting allows TickTock to not only rotate the element to the correct day but to also rotate an additional amount for the day{String.fromCharCode(39)}s current hour.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  day: {
-    id: 'day-indicator-disc',
-    offsetHours: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Month - Overview' anchor='month-overview'>
-              <DocSpecs property='month' />
-              <p>Month indicators are used to display the current month of the year. This is commonly seen as a rotating dial with the month abbreviation being shown through a window but can also be built as a rotating hand pointing to the current month.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  month: {
-    id: 'month-disc'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Month - Define the Indicator' anchor='month-definetheindicator'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>month</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the indicator element{String.fromCharCode(39)}s ID. The indicator{String.fromCharCode(39)}s initial position is expected to be on January and will rotate clockwise for each month from there.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  month: {
-    id: 'month-disc'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Year - Overview' anchor='year-overview'>
-              <DocSpecs property='year' />
-              <p>A year indicator is commonly included within perpetual calendar complications. It will indicate the current year{String.fromCharCode(39)}s relation to the next leap year. Usually shown as four sections with a rotating hand, the indictor will highlight when the current year is a leap year and show the other year{String.fromCharCode(39)}s position otherwise.</p>
-              <p>TickTock also accounts for designs that may want to show the year{String.fromCharCode(39)}s progress. Much like the Day Indicator{String.fromCharCode(39)}s <span className='is-code-ref'>offsetHours</span> functionality, the <span className='is-code-ref'>offsetMonths</span> functionality rotates the indicator 90deg for each year and an additional 7.5deg for each month.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  year: {
-    id: 'year-disc',
-    offsetMonths: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Year - Define the Indicator' anchor='year-definetheindicator'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>year</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the indicator element{String.fromCharCode(39)}s ID. TickTock, by default, expects the initial position of the indicator
-                pointing toward the middle of the first year in the set of four with the fourth year being the leap year.This is different if using <span className='is-code-ref'>offsetMonths</span>.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  year: {
-    id: 'year-disc'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Year - Offset the Months' anchor='year-offsetmonths'>
-              <DocSpecs property='offset' type='Boolean' def='False' />
-              <p>TickTock also accounts for designs that may want to show the year{String.fromCharCode(39)}s progress. Much like the Day Indicator{String.fromCharCode(39)}s offsetHours functionality, the offsetMonths functionality rotates the indicator 90deg for each year and an additional 7.5deg for each month.</p>
-              <p>TickTock expects the initial position of the indicator pointing toward the first year in the set of four with the fourth year being the leap year. If the indicator is not going to offset the months, the indictor can point to the middle of the year and will rotate 90deg for each additional year. But if the indicator is to offset the months, the initial position should begin at the very beginning of the first year label as it will rotate 90deg per year and an additional 7.5deg per month.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  year: {
-    id: 'year-disc',
-    offsetMonths: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-          </section>
-
-          <section ref={section => this.chronographSection = section}>
-            <DocSection groupHeader='Chronograph' subHeader='Overview' anchor='chronograph-overview'>
-              <DocSpecs property='chronograph' />
-              <p>A chronograph is a specific type of watch that is used as a stopwatch combined with a display watch. A basic chronograph has an independent sweep second hand; it can be started, stopped, and returned to zero by successive pressure on the stem.</p>
-              <p>The chronograph functionality is triggered with buttons to start/pause and another to reset the hands. There are many variations of chronographs but TickTock expects the start button to be clicked multiple times to pause and resume. A separate reset button will stop the chronograph and reposition all hands to their original state (which TickTock expects to be at the 12 o${String.fromCharCode(39)}clock position). An exception to this is when the chronograph is set be function as a flyback chronograph in which case the reset button returns the hands to their original position but then continues running - for example, if timing laps around a track.</p>
-              <p>The <span className='is-code-ref'>chronograph</span> objects expects properties for the <span className='is-code-ref'>hands</span>, <span className='is-code-ref'>buttons</span>, and optionally a <span className='is-code-ref'>flyback</span> boolean.</p>
-              <CodeBlock>
-{`settings = {
-  dials: [{
-      name: 'primary',
-      hands: {
-        hour: 'chrono-dial-hour-hand',
-        minute: 'chrono-dial-minute-hand',
-        second: 'chrono-dial-second-hand',
-      },
-      sweep: true,
-    },
-  ],
-  chronograph: {
-    buttons: {
-      start: 'start-pause-btn',
-      reset: 'reset-btn',
-    },
-    hands: {
-      tenth: 'chrono-tenth-second-hand',
-      second: 'chrono-second-hand',
-      minute: 'chrono-minute-hand',
-    },
-  },
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Define the Hands' anchor='chronograph-definethehands'>
-              <DocSpecs property='hands' required='True' />
-              <p>The <span className='is-code-ref'>chronograph</span> object expects a <span className='is-code-ref'>hands</span> object to create references based on element IDs. TickTock supports hands for tenth seconds, seconds, and minutes. Each property should be a string containing the individual hand element ID.</p>
-              <CodeBlock>
-{`settings = {
-  ...
-  chronograph: {
-    hands: {
-      tenth: 'chrono-tenth-second-hand',
-      second: 'chrono-second-hand',
-      minute: 'chrono-minute-hand',
-    },
-  },
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Define the Buttons' anchor='chronograph-definethebuttons'>
-              <DocSpecs property='buttons' required='True' />
-              <p>The <span className='is-code-ref'>chronograph</span> object expects a <span className='is-code-ref'>buttons</span> object to create references based on element IDs.</p>
-              <p>The buttons can be any HTML element as long as it has an ID to pass to TickTock. The <span className='is-code-ref'>start</span> button acts as a toggle between starting and pausing the chronograph.</p>
-              <p>The <span className='is-code-ref'>reset</span> button by default will stop the chronograph and return the hands to their original positions, which are expected to be at the 12 o{String.fromCharCode(39)}clock position. However, this functionality can be altered by using the <span className='is-code-ref'>flyback</span> property which will then cause the reset button to merely return the hands to their original positions to immediately begin running again without pauing the chronograph.</p>
-              <p>Clicking on a button will add an <span className='is-code-ref'>active</span> class to the element. TickTock does this by default as well as adds a <span className='is-code-ref'>transitionend</span> event listener to each button so a pressing animation can be achieved by adding in the CSS styles to the elements and allowing TickTock to toggle the classes.</p>
-              <CodeBlock>
-{`settings = {
-  ...
-  chronograph: {
-    ...
-    buttons: {
-      start: 'start-pause-btn',
-      reset: 'reset-btn',
-    },
-  },
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Flyback Chronograph' anchor='chronograph-flyback'>
-              <DocSpecs property='flyback' type='Boolean' required='False' def='False' />
-              <p>When pressing the reset button on many chronographs, the chronograph stops and the hands return to their original positions. However, a variation of this is the flyback chronograph. Aimed more at timing spits between laps, pressing the reset button on a flyback chronograph will return the hands to their original positions where they will immediately begin running again.</p>
-              <p>To fully reset a flyback chronograph, the functionality must be paused prior to pressing reset.</p>
-              <CodeBlock>
-{`settings = {
-  ...
-  chronograph: {
-    ...
-    flyback: true,
-  },
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Button Active States' anchor='chronograph-activestates'>
-              <p>Clicking on a button will add an <span className='is-code-ref'>active</span> class to the element. TickTock does this by default as well as adds a <span className='is-code-ref'>transitionend</span> event listener to each button so a pressing animation can be achieved by adding in the CSS styles to the elements and allowing TickTock to toggle the classes.</p>
-            </DocSection>
-          </section>
-
-          <section ref={section => this.dayNightSection = section}>
-            <DocSection groupHeader='Day/Night Indicator' subHeader='Overview' anchor='day-night-overview'>
-              <DocSpecs property='dayNightIndicator' />
-              <p>A day/night indicator shows which half the day cooresponds to. This does not sync up with sunrise and sunset but merely depicts AM and PM. This is a feature commonly found with 12-hour dials or dual time complications to more clearly convey the time of day.</p>
-              <p>Many simple day/night indicators are a two-color disc that show {String.fromCharCode(39)}day{String.fromCharCode(39)} only from midnight to 6 AM and {String.fromCharCode(39)}night{String.fromCharCode(39)} only from noon to 6 PM, with a half-day or half-night display the rest of the time. TickTock follows this convention.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  dayNightIndicator: {
-    id: 'day-night-dial',
-    dial: 1,
-    invert: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Define the Indicator' anchor='day-night-definetheindicator'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>dayNightIndicator</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the indicator element{String.fromCharCode(39)}s ID. The default behavior will be for the indicator to rotate clockwise relative to the time of the first dial passed in the dials array.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  dayNightIndicator: {
-    id: 'day-night-dial'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Target a Specific Dial' anchor='day-night-targetaspecificdial'>
-              <DocSpecs property='dial' type='Number' def='0' />
-              <p>The default behavior for the day/night indicator is to depict the time of the first dial (index 0) passed into the <span className='is-code-ref'>dials</span> array. However, if the indicator should represent the time of a secondary dial, use the dial property and pass in a number cooresponding to the dials array index value.</p>
-              <p>Note that if changing the default dial for the indicator, the target dial will need to have a <span className='is-code-ref'>name</span> property provided. The indicator looks for the custom dial by name when checking the time and updating.</p>
-              <p>In the example code below, the day/night indicator will be tied to the {String.fromCharCode(39)}secondary{String.fromCharCode(39)} dial in the <span className='is-code-ref'>dials</span> array by setting its <span className='is-code-ref'>dial</span> property to a value of 1.</p>
-              <CodeBlock>
-  {`let settings = {
-  dials: [{
-      name: 'primary',
-      hands: {
-        hour: 'dial-primary-hour-hand',
-        minute: 'dial-primary-minute-hand',
-        second: 'dial-primary-second-hand'
-      }
-    },
+{`const FramesObj = {
+  frames: [
     {
-      name: 'secondary',
-      hands: {
-        hour: 'dial-secondary-hour-hand',
-        minute: 'dial-secondary-minute-hand',
-        second: 'dial-secondary-second-hand'
-      },
-      offset: '+6',
-      sweep: true
-    }]
-  dayNightIndicator: {
-    id: 'day-night-dial',
-    dial: 1
-  }
-};`}
-              </CodeBlock>
+      props: { transform: "t10,40" },
+      duration: 1000
+    }
+  ]
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Invert the Direction' anchor='day-night-invertthedirection'>
-              <DocSpecs property='invert' type='Boolean' def='False' />
-              <p>By default, the day/night indicator rotates clockwise with the initial position set to the full day display. To invert this behavior, and rotate counter clockwise, set the <span className='is-code-ref'>invert</span> property to true.</p>
+            <DocSection subHeader='Animate - FramesObj - frames' anchor='animate-framesobj-frames'>
+              <DocSpecs property='frames' type='Array' required='True' />
+              <p>The <span className='is-code-ref'>frames</span> array stores the information for each step of the animation. Add multiple entries to the array to create a sequence, with each entry being referred to as a 'frame'.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  dayNightIndicator: {
-    id: 'day-night-dial',
-    dial: 1,
-    invert: true
-  }
-};`}
-              </CodeBlock>
+{`const FramesObj = {
+  frames: [
+    { props: { transform: "t10,40" }, duration: 500 },
+    { props: { transform: "t100,-40" }, delay: 250, duration: 1500 },
+    { props: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+  ]
+};`}</CodeBlock>
             </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - frames - props' anchor='animate-framesobj-framesprops'>
+              <DocSpecs property='props' required='True' />
+              <p>The <span className='is-code-ref'>props</span> object supplies the function with the properties that are to be animated. These calls follow the standard syntax of SnapSVG. SnapSVG documentation for transforms can be found <a href='http://svg.dabbles.info/snaptut-transform' target='new'>here</a>.</p>
+              <CodeBlock>
+{`const FramesObj = {
+  frames: [
+    { props: { transform: "t10,40" }, duration: 500 },
+    { props: { transform: "t100,-40" }, delay: 500, duration: 1500 },
+    { props: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+  ]
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - frames - delay' anchor='animate-framesobj-framesdelay'>
+              <DocSpecs property='delay' type='Number' def='0' />
+              <p>Set the delay of the frame in milliseconds.</p>
+              <CodeBlock>
+{`const FramesObj = {
+  frames: [
+    { props: { transform: "t10,40" }, duration: 500 },
+    { props: { transform: "t100,-40" }, delay: 500, duration: 1500 },
+    { props: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+  ]
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - frames - duration' anchor='animate-framesobj-framesduration'>
+              <DocSpecs property='duration' required='True' type='Number' />
+              <p>Set the duration of the frame animation in milliseconds.</p>
+              <CodeBlock>
+{`const FramesObj = {
+  frames: [
+    { props: { transform: "t10,40" }, duration: 500 },
+    { props: { transform: "t100,-40" }, delay: 500, duration: 1500 },
+    { props: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+  ]
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - frames - easing' anchor='animate-framesobj-frameseasing'>
+              <DocSpecs property='easing' type='Function' def='FramesObj.easing || mina.linear' />
+              <p>Each frame can be given a frame-specific easing function. If no easing is provided for the frame SnapFoo will default to the global easing function. The easing functions are the same as those found in SnapSVG. Examples of supported mina-type easings can be found at this <a href='http://codepen.io/mike-tempest/pen/myvbrw' target='new'>CodePen</a>.</p>
+              <CodeBlock>
+{`const FramesObj = {
+  frames: [
+    { props: { transform: "t10,40" }, duration: 500 },
+    { props: { transform: "t100,-40" }, delay: 500, duration: 1500 },
+    { props: { transform: "s2,2", opacity: .75 }, duration: 500, easing: mina.bounce }
+  ]
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - callbackAt' anchor='animate-framesobj-callbackat'>
+              <DocSpecs property='callbackAt' type='String' def='end' />
+              <p>When supplying a callback use the callbackAt property to specify when during the animation it should execute.</p>
+              <p className='is-strong'>There are four options:</p>
+              <p><span className='is-code-ref'>child</span>: Will execute anytime a child finishes its final frame regardless of loops</p>
+              <p><span className='is-code-ref'>child end</span>: Will execute whenever a child completes its final loop</p>
+              <p><span className='is-code-ref'>end</span>: Will execute whenever the final child completes its final loop</p>
+              <p><span className='is-code-ref'>loop</span>: Will execute whenever the final child completes a loop</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end'
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - delay' anchor='animate-framesobj-delay'>
+              <DocSpecs property='delay' type='Number' def='0' />
+              <p>Place a delay at the beginning of an animation in milliseconds.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - duration' anchor='animate-framesobj-duration'>
+              <DocSpecs property='duration' type='Number' def='0' />
+              <p>Enter the duration of the animation in milliseconds. If no frame-specific durations are set, the duration provided will be divided between the amount of frames and distributed evenly.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - easing' anchor='animate-framesobj-easing'>
+              <DocSpecs property='easing' type='Function' def='mina.linear' />
+              <p>Define a global easing function to be used across all frames. The easing functions are the same as those found in SnapSVG. Examples of supported mina-type easings can be found at this <a href='http://codepen.io/mike-tempest/pen/myvbrw' target='new'>CodePen</a>.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000,
+    easing: mina.backout
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - loop' anchor='animate-framesobj-loop'>
+              <DocSpecs property='loop' type='Boolean' def='False' />
+              <p>Set this property to true if the animation should loop. After completing the final frame, the element will reset to its original position and repeat.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000,
+    easing: mina.backout,
+    loop: true
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - loopCount' anchor='animate-framesobj-loopcount'>
+              <DocSpecs property='loopCount' type='Number' def='0 (infinite)' />
+              <p>Setting the loopCount property will determine how many times a loop should complete before stopping.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000,
+    easing: mina.backout,
+    loop: true,
+    loopCount: 3
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - reset' anchor='animate-framesobj-reset'>
+              <DocSpecs property='reset' type='Boolean' def='False' />
+              <p>The reset property determines if an element should remain in its final state or be reset to its original values after completing the animation. If an element is animated from big to small it will remain small after animating if reset is false; if true, it will reset to its original size.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000,
+    easing: mina.backout,
+    loop: true,
+    loopCount: 3,
+    reset: true
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - FramesObj - stagger' anchor='animate-framesobj-stagger'>
+              <DocSpecs property='stagger' type='Number' def='0' />
+              <p>If animating numerous objects use the stagger property to place a delay between each object before it begins its first frames. The value should be entered in milliseconds.</p>
+              <CodeBlock>
+{`const FramesObj = {
+    frames: [ ... ],
+    callbackAt: 'child end',
+    delay: 1000,
+    duration: 5000,
+    easing: mina.backout,
+    loop: true,
+    loopCount: 3,
+    reset: true,
+    stagger: 500
+};`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate - Callback' anchor='animate-callback'>
+              <DocSpecs type='Function' />
+              <p>Provide a callback that will execute based upon the <span className='is-code-ref'>callbackAt</span> value. Each callback is scoped to the animated element itself, so using <span className='is-code-ref'>$(this)</span> will return the current element.</p>
+              <CodeBlock>
+{`snapfoo.animate('circle', FramesObj, function() {
+    $(this).attr('fill','#000');
+});`}</CodeBlock>
+            </DocSection>
+
           </section>
 
-          <section ref={section => this.dialsSection = section}>
-            <DocSection groupHeader='Dials' subHeader='Overview' anchor='dials-overview'>
-              <DocSpecs property='dials' type='Array' required='True' />
-              <p>The dials are the primary component in TickTock. A dial serves as a collection of hand elements and settings used to indicate the time by rotating the elements according to the current local time, the provided GMT offset, or the manually set time.</p>
+          <section ref={section => this.animatePathSection = section}>
+            <DocSection groupHeader='Animate Path' anchor='animatepath-overview'>
+              <p>Animate an element or group of elements along a path. Any element that is animated that does not have an ID is appended the class <span className='is-code-ref'>sf[#]</span> for a unique identifier.</p>
+              <CodeBlock>{`SnapFoo.animatePath(element, options, callback)`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate Path - Element' anchor='animatepath-element'>
+              <DocSpecs type='String' required='True' />
+              <p>Use a jQuery-like selector to target which elements should be animated. SnapFoo will iterate over any matches found inside of <span className='is-code-ref'>theSVGContainer</span>. Any element that is animated that does not have an ID is appended the class <span className='is-code-ref'>sf[#]</span> for a unique identifier.</p>
+              <p className='is-strong'>Target individual elements</p>
+              <CodeBlock>{`SnapFoo.animatePath("#the-circle", obj, callback);`}</CodeBlock>
+              <p className='is-strong'>Select numerous elements</p>
+              <CodeBlock>{`SnapFoo.animatePath(".the-circle, #the-square, .test-element", obj, callback);`}</CodeBlock>
+              <p className='is-strong'>Target elements by tag</p>
+              <CodeBlock>{`SnapFoo.animatePath("circle", obj, callback);`}</CodeBlock>
+              <p className='is-strong'>Use other selector types</p>
+              <CodeBlock>{`SnapFoo.animatePath("g > circle", obj, callback);`}</CodeBlock>
+            </DocSection>
+
+            <DocSection subHeader='Animate Path - Options' anchor='animatepath-options'>
+              <DocSpecs type='Object' required='True' />
+              <p>The <span className='is-code-ref'>options</span> object stores the animation properties and any additional options.</p>
+              <ul>
+               <li>options {Object}
+                <ul>
+                  <li>callbackAt {String}</li>
+                  <li>delay {Number}</li>
+                  <li>duration {Number}</li>
+                  <li>easing {Function}</li>
+                  <li>loop {Boolean}</li>
+                  <li>loopCount {Number}</li>
+                  <li>path {String}</li>
+                  <li>reset {Boolean}</li>
+                  <li>rewind {Boolean}</li>
+                  <li>rewindDelay {Number}</li>
+                  <li>rewindDuration {Number}</li>
+                  <li>rewindEasing {Function}</li>
+                  <li>stagger {Number}</li>
+                </ul>
+               </li>
+              </ul>
+              <p>The minimum requirements include a <span className='is-code-ref'>.path</span> and <span className='is-code-ref'>.duration</span> property set. The other keys are set to defaults if not supplied.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    },
-    offset: '+3',
-    format: 12,
-    sweep: true
-  }]
-};`}
-              </CodeBlock>
+{`const options = {
+    duration: 2500,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define a Dial' anchor='dials-defineadial'>
-              <DocSpecs property='dials' type='Array' required='True' />
-              <p>The <span className='is-code-ref'>dials</span> property is an array that contains objects for each individual dial. This allows flexibility in how to display the time as well as how many time zones can be shown.</p>
-              <p>Every hand element entered in a dial object will work in unison regardless of where they visually appear in the design. For example, if the watch has large hour and minute hands but shows the seconds in a sub-dial at 6 o{String.fromCharCode(39)}clock, those can still be designated in the same dial object. Just because visually they are not together does not mean that they must be entrered as separate dials.</p>
+            <DocSection subHeader='Animate Path - Options - callbackAt' anchor='animatepath-options-callbackat'>
+              <DocSpecs property='callbackAt' type='String' def='end' />
+              <p>When supplying a callback use the callbackAt property to specify when during the animation it should execute.</p>
+              <p className='is-strong'>There are four options:</p>
+              <p><span className='is-code-ref'>child</span>: Will execute anytime a child finishes its final frame regardless of loops</p>
+              <p><span className='is-code-ref'>child end</span>: Will execute whenever a child completes its final loop</p>
+              <p><span className='is-code-ref'>end</span>: Will execute whenever the final child completes its final loop</p>
+              <p><span className='is-code-ref'>loop</span>: Will execute whenever the final child completes a loop</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    },
-    offset: '+3',
-    format: 12,
-    sweep: true
-  }]
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    duration: 2500,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Dial Names' anchor='dials-dialnames'>
-              <DocSpecs property='name' type='String' />
-              <p>Dial names are not required in most instances. The <span className='is-code-ref'>name</span> is primarily used for personal reference. However, the <span className='is-code-ref'>name</span> does serve a purpose when including the Day/Night Indicator complication. Because Day/Night Indicators are often used on watches that have multiple dials, the name of the dial is used to link the indicator to the correct dial.</p>
+            <DocSection subHeader='Animate Path - Options - delay' anchor='animatepath-options-delay'>
+              <DocSpecs property='delay' type='Number' def='0' />
+              <p>Place a delay at the beginning of an animation in milliseconds.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    ...
-  }]
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define the Hands' anchor='dials-definethehands'>
-              <DocSpecs property='hands' type='Object' required='True' />
-              <p>The <span className='is-code-ref'>hands</span> object contains three properties, <span className='is-code-ref'>hour</span>, <span className='is-code-ref'>minute</span>, and <span className='is-code-ref'>second</span>. Each property contains a string value of corresponding element{String.fromCharCode(39)}s ID.</p>
-              <p>While the <span className='is-code-ref'>hands</span> object is required for the dial component, not every hand is required. A dial could contain an hour and minute hand, just a second hand, or any combination of the three.</p>
+            <DocSection subHeader='Animate Path - Options - duration' anchor='animatepath-options-duration'>
+              <DocSpecs property='duration' type='Number' required='True' />
+              <p>Set the duration of the animation in milliseconds.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    }
-  }]
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='GMT Offsets' anchor='dials-gmtoffsets'>
-              <DocSpecs property='offset' type='String' />
-              <p className='is-strong'>WIll be deprecated in v3.0 in lieu of the timezone property</p>
-              <p>TickTock defaults to the local timezone by using Moment JS'{String.fromCharCode(39)} default date object. However, a dial can be given a specific GMT offset value to override this default.</p>
-              <p>The <span className='is-code-ref'>offset</span> property is a string supporting both negative and positive values. The values are relative to the Greenwich Mean Time (GMT). So to set a dial to show the time in New York City the offset property would have a value of {String.fromCharCode(39)}-5{String.fromCharCode(39)}. Whereas showing the time in Singapore would be {String.fromCharCode(39)}+8{String.fromCharCode(39)}.</p>
-              <p>Decimal values are also supported. For example, Delhi would have an <span className='is-code-ref'>offset</span> value of {String.fromCharCode(39)}+5.3{String.fromCharCode(39)}.</p>
+            <DocSection subHeader='Animate Path - Options - easing' anchor='animatepath-options-easing'>
+              <DocSpecs property='easing' type='Function' def='mina.linear' />
+              <p>Define a global easing function to be used across all frames. The easing functions are the same as those found in SnapSVG. Examples of supported mina-type easings can be found at this <a href='http://codepen.io/mike-tempest/pen/myvbrw' target='new'>CodePen</a>.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    }
-  }],
-  offset: '+2' // Helsinki, Finland
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Defining a Timezone' anchor='dials-timezone'>
-              <DocSpecs property='timezone' type='String' />
-              <p>The <span className='is-code-ref'>timezone</span> property was added to ultimately replace the <span className='is-code-ref'>offset</span> property. This property accepts a string of the target timezone. Using MomentJS and Moment Timezone, this new property can take into account Daylight Savings as well as give a more intuitive way of specifying a secondary timezone.</p>
-              <p>All accepted timezone values can be found on the <a href='https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json' target='new'>Moment-Timezone repo</a>.</p>
+            <DocSection subHeader='Animate Path - Options - loop' anchor='animatepath-options-loop'>
+              <DocSpecs property='loop' type='Boolean' def='False' />
+              <p>Set this property to true if the animation should loop. After completing the path, the element will reset to its original position and repeat.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    }
-  }],
-  timezone: 'America/New_York'
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='12/24-hour Formats' anchor='dials-hourformats'>
-              <DocSpecs property='offset' type='Number' def='12' />
-              <p>Most watches show time in a 12-hour format where the hour hand rotates a full circle every 12 hours. But if the dial is to show the time in a 24-hour format, TickTock supports the <span className='is-code-ref'>format</span> property. The property defaults to 12 but can be set to 24 to adust the rotation value of the hour hand.</p>
+            <DocSection subHeader='Animate Path - Options - loopCount' anchor='animatepath-options-loopcount'>
+              <DocSpecs property='loopCount' type='Number' def='0 (infinite)' />
+              <p>Setting the loopCount property will determine how many times a loop should complete before stopping.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    }
-  }],
-  offset: '-4',
-  format: 24
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Sweeping Seconds' anchor='dials-sweepingseconds'>
-              <DocSpecs property='sweep' type='Boolean' def='False' />
-              <p>By default, the second hand of each dial will tick or jump from one position to the next. However, by setting the <span className='is-code-ref'>sweep</span> property to true TickTock will apply a CSS transition to the second hand to have it smoothly rotate around the dial.</p>
-              <p>The <span className='is-code-ref'>sweep</span> property only affects the second hand of the dial. To have a sweeping motion for the minute and hour hands as well, a CSS transition will need to be added manually.</p>
+            <DocSection subHeader='Animate Path - Options - path' anchor='animatepath-options-path'>
+              <DocSpecs property='path' type='String' required='True' />
+              <p>Pass a string of a class name or ID of the path over which the elements should animate.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-    name: 'primary-dial',
-    hands: {
-      hour: 'element-id',
-      minute: 'element-id',
-      second: 'element-id'
-    }
-  }],
-  offset: '-4',
-  format: 24,
-  sweep: true
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path'
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Multiple Dials' anchor='dials-multipledials'>
-              <p>Because the <span className='is-code-ref'>dials</span> property is an array of dial objects, a single watch can display multiple dials at once. For example, Dual Time watches which show both local and home times together. TickTock supports passing in multiple dial objects each with their own settings to support such complications.</p>
+            <DocSection subHeader='Animate Path - Options - reset' anchor='animatepath-options-reset'>
+              <DocSpecs property='reset' type='Boolean' def='False' />
+              <p>The <span class='is-code-ref'>reset</span> property determines if an element should remain in its final state or be reset to its original values after completing the animation. If an element animates from left to right it will remain at its right position if obj.reset is false. If true, it will return to its original left position upon completing its animation.</p>
               <CodeBlock>
-  {`let settings = {
-  dials: [{
-      name: 'primary',
-      hands: {
-        hour: 'dial-primary-hour-hand',
-        minute: 'dial-primary-minute-hand',
-        second: 'dial-primary-second-hand'
-      }
-    },
-    {
-      name: 'secondary',
-      hands: {
-        hour: 'dial-secondary-hour-hand',
-        minute: 'dial-secondary-minute-hand',
-        second: 'dial-secondary-second-hand'
-      },
-      offset: '+6',
-      sweep: true
-    }]
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reset: true
+};`}</CodeBlock>
             </DocSection>
-          </section>
 
-          <section ref={section => this.crownSection = section}>
-            <DocSection groupHeader='Manual Time (Crown)' subHeader='Overview' anchor='crown-overview'>
-              <DocSpecs property='crown' type='Object' />
-              <p>The manual time complication allows a user to click the crown of the watch to temporarily pause its running. In this state, referred to as the set state, they{String.fromCharCode(39)}.re able to use the arrow keys to manually adjust the time. Upon clicking the crown again, TickTock will resume telling the time from the manually set position. To account for visual cues, on click, the crown will toggle an {String.fromCharCode(39)}.active{String.fromCharCode(39)}. class.</p>
-              <p>Additionally, if a secondary dial is being used, while in the set state, the right arrow key will allow a user to target the secondary dial to set its time independently.</p>
+            <DocSection subHeader='Animate Path - Options - rewind' anchor='animatepath-options-rewind'>
+              <DocSpecs property='rewind' type='Boolean' def='False' />
+              <p>Once an element completes its path animation in one direction, if the <span class='is-code-ref'>rewind</span> property is true, the element will be animated backwards along the path to its original position.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  crown: {
-    id: 'the-crown'
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reset: true,
+    rewind: true
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define the Crown' anchor='crown-definethecrown'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>crown</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects a string value of the crown element{String.fromCharCode(39)}s ID. TickTock will automatically update the CSS cursor property of the crown element to pointer to visually indicate the functionality on hover.</p>
+            <DocSection subHeader='Animate Path - Options - rewindDelay' anchor='animatepath-options-rewinddelay'>
+              <DocSpecs property='rewindDelay' type='Number' def='0' />
+              <p>A delay can be added in milliseconds before a rewind animation begins.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  crown: {
-    id: 'the-crown'
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reset: true,
+    rewind: true,
+    rewindDelay: 250
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Crown Active States' anchor='crown-activestates'>
-              <p>To allow for visual cues between states, the crown will toggle an <span className='is-code-ref'>{String.fromCharCode(39)}active{String.fromCharCode(39)}</span> class whenever clicked.</p>
-              <p>For example, this can allow a CSS transition to slide the crown out into a set position upon the first click and then transtion it back into its original position when clicked again.</p>
-              <p>Note that the enter key will execute the same functionality as clicking the crown based on the default keybindings of the Watch class.</p>
-            </DocSection>
-
-            <DocSection subHeader='Watch Keybindings' anchor='crown-keybindings'>
-              <p>When the crown is clicked, a series of keydown event listeners are enabled to allow setting the time on dials, increasing power reserves, and alternating between dials. Additionally, the enter key is bound to replicate the behavior of clicking the crown.</p>
-              <p className='is-underlined'>Default Keybindings:</p>
-              <p>The <span className='is-code-ref'>enter</span> key will toggle the crown between default and set states.</p>
-              <p>The <span className='is-code-ref'>left</span> arrow key will wind the power reserve.</p>
-              <p className='is-underlined'>In Set State:</p>
-              <p>The <span className='is-code-ref'>up</span> and <span className='is-code-ref'>down</span> arrow keys will adjust the time of the active dial.</p>
-              <p>The <span className='is-code-ref'>right</span> arrow key will alternate the active dial based on the order of the dials array.</p>
-            </DocSection>
-          </section>
-
-          <section ref={section => this.repeaterSection = section}>
-            <DocSection groupHeader='Minute Repeater' subHeader='Overview' anchor='minute-repeater-overview'>
-              <DocSpecs property='repeater' type='Object' />
-              <p>A repeater is a complication that audibly chimes the hours and often minutes at the press of a button. There are many types of repeater but the minute repeater chimes the time down to the minute, using separate tones for hours, quarter hours, and minutes.</p>
-              <p>The repeater button or trigger can be any element type as long as it contains an ID. Clicking the trigger will toggle playing the chimes. Upon playing the chimes, the time is stored so in the event a new minute passes after the initial button was clicked but before the chimes have completed, the latest minute will not be played.</p>
+            <DocSection subHeader='Animate Path - Options - rewindDuration' anchor='animatepath-options-rewindduration'>
+              <DocSpecs property='rewindDuration' type='Number' def='options.duration' />
+              <p>By default, the rewind animation will use the same duration value as the initial animation. However, the <span class='is-code-ref'>rewindDuration</span> property can be set to have a different behavior on the rewind.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  repeater: {
-    id: 'repeater-btn',
-    chimes: {
-      hour: './dist/sounds/chime-01.mp4',
-      quarter: './dist/sounds/chime-02.mp4',
-      minute: './dist/sounds/chime-03.mp4'
-    },
-    dial: 1
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reset: true,
+    rewind: true,
+    rewindDelay: 250,
+    rewindDuration: 1000
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define the Trigger' anchor='minute-repeater-definethetrigger'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>repeater</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects the ID of the repeater trigger element as a string.</p>
-              <p>Clicking the trigger will toggle playing and stopping the chimes. Additionally, upon playing the chimes, the time is stored so in the event a new minute passes after the initial button was clicked but before the chimes have completed, the latest minute will not be played.</p>
+            <DocSection subHeader='Animate Path - Options - rewindEasing' anchor='animatepath-options-rewindeasing'>
+              <DocSpecs property='rewindEasing' type='Function' def='options.easing || mina.linear' />
+              <p>By default, the rewind animation will use the same easing function as the initial animation. However, the <span class='is-code-ref'>rewindEasing</span> property can be set to have a different behavior on the rewind.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  repeater: {
-    id: 'repeater-btn'
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reset: true,
+    rewind: true,
+    rewindDelay: 250,
+    rewindDuration: 1000,
+    rewindEasing: mina.backout
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define the Chimes' anchor='minute-repeater-definethechimes'>
-              <DocSpecs property='chimes' type='Object' required='True' />
-              <p>There are chimes included with TickTock, three separate sounds to represent minutes, quarter hours, and hours. These sounds were found on the <a href='https://freesound.org/' target='new' className='invert'>Free Sound Project</a>.</p>
-              <p>However, custom chimes can be used by defining the path to each audio file inside of the <span className='is-code-ref'>chimes</span> object.</p>
+            <DocSection subHeader='Animate Path - Options - reverse' anchor='animatepath-options-reverse'>
+              <DocSpecs property='reverse' type='Boolean' def='False' />
+              <p>Setting the <span class='is-code-ref'>reverse</span> property to true allows the element to begin at the end of the path and animate to the beginning.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  repeater: {
-    id: 'repeater-btn',
-    chimes: {
-      hour: './dist/sounds/chime-01.mp4',
-      quarter: './dist/sounds/chime-02.mp4',
-      minute: './dist/sounds/chime-03.mp4'
-    }
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reverse: true
+};`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Target a Specific Dial' anchor='minute-repeater-targetaspecificdial'>
-              <DocSpecs property='dial' type='Number' def='0' />
-              <p>The minute repeater by default will chime the time of the first dial in the <span className='is-code-ref'>dials</span> array. However, the repeater can read the time of secondary dials as well by passing the dial{String.fromCharCode(39)}s array index into the <span className='is-code-ref'>dial</span> property.</p>
+            <DocSection subHeader='Animate Path - Options - stagger' anchor='animatepath-options-stagger'>
+              <DocSpecs property='stagger' type='Number' def='0' />
+              <p>If animating numerous objects use the stagger property to place a delay between each object before its animation begins. The value should be entered in milliseconds.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  repeater: {
-    id: 'repeater-btn',
-    chimes: {
-      hour: './dist/sounds/chime-01.mp4',
-      quarter: './dist/sounds/chime-02.mp4',
-      minute: './dist/sounds/chime-03.mp4'
-    },
-    dial: 1
-  }
-};`}
-              </CodeBlock>
+{`const options = {
+    callbackAt: 'loop',
+    delay: 500,
+    duration: 2500,
+    easing: mina.backin,
+    loop: true,
+    loopCount: 3,
+    path: '#wave-path',
+    reverse: true,
+    stagger: 500
+};`}</CodeBlock>
             </DocSection>
-          </section>
 
-          <section ref={section => this.moonphaseSection = section}>
-            <DocSection groupHeader='Moonphase' subHeader='Overview' anchor='moonphase-overview'>
-              <DocSpecs property='moonphase' type='Object' />
-              <p>A moon-phase indication is a rotating disc, shown in a dial section, that indicates the position of the moon - usually the way it presents itself at the observation of the Northern Hemisphere.</p>
-              <p>TickTock will rotate the moonphase disc from new moon to waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, three quarter, and waning crescent. It will also default to rotating the disc clockwise beginning from the full moon position.</p>
+            <DocSection subHeader='Animate Path - Callback' anchor='animatepath-callback'>
+              <DocSpecs type='Function' />
+              <p>Provide a callback that will execute based upon the <span class='is-code-ref'>callbackAt</span> value. Each callback is scoped to the animated element itself, so using <span class='is-code-ref'>$(this)</span> will return the current element.</p>
               <CodeBlock>
-  {`let settings = {
-  ...
-  moonphase: {
-    id: 'moonphase-disc',
-    invert: true
-  }
-};`}
-              </CodeBlock>
+{`SnapFoo.animatePath('circle', obj, function() {
+    $(this).attr('fill','#000');
+});`}</CodeBlock>
             </DocSection>
 
-            <DocSection subHeader='Define the Element' anchor='moonphase-definetheelement'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>moonphase</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects the ID of the moonphase disc as a string.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  moonphase: {
-    id: 'moonphase-disc'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
 
-            <DocSection subHeader='Invert the Direction' anchor='moonphase-invertdirection'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>TickTock will rotate the moonphase disc from new moon to waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, three quarter, and waning crescent. It will also default to rotating the disc clockwise beginning from the full moon position which can be reversed with the <span className='is-code-ref'>invert</span> property.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  moonphase: {
-    id: 'moonphase-disc',
-    invert: true
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-          </section>
-
-          <section ref={section => this.reserveSection = section}>
-            <DocSection groupHeader='Power Reserve' subHeader='Overview' anchor='power-reserve-overview'>
-              <DocSpecs property='reserve' type='Object' />
-              <p>A power reserve indicator is a complication of the watch which is designed to show the amount of remaining stored energy. The power reserve indicator indicates the tension on the mainspring at any particular moment. If the indicator is fully drained, the watch will stop running until it{String.fromCharCode(39)}s wound again.</p>
-              <p>Many reserve indicators are half circles or partial curves. So TickTock accepts a range of rotation values, its empty and full positions, to determine the movement of the hand. The hand will be placed in the full position by default and will drain 0.5deg per second. As the reserve reaches its empty range value, all complications cease to work until the watch is wound again by using the left arrow key.</p>
-              <p>Note that the range values are relative to the hand{String.fromCharCode(39)}s starting position.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  reserve: {
-    id: 'power-reserve-hand',
-    range: [-90, 90]
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Define the Element' anchor='power-reserve-definetheelement'>
-              <DocSpecs property='id' type='String' required='True' />
-              <p>The <span className='is-code-ref'>reserve</span> object accepts an <span className='is-code-ref'>id</span> property. This property expects the ID of the power reserve element as a string.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  reserve: {
-    id: 'power-reserve-hand'
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-
-            <DocSection subHeader='Setting the Range of Motion' anchor='power-reserve-rangeofmotion'>
-              <DocSpecs property='range' type='Array' required='True' />
-              <p>Many power reserve indicators are half or partial circles. Because of this, TickTock supports a range of motion for the reserve indicator. The <span className='is-code-ref'>range</span> array should contain the min and max values of the indicator{String.fromCharCode(39)}s range of motion.</p>
-              <p>The range of the indicator is relative to its original position. For example, if the reserve is shown as a half circle with the indicator drawn horizontally at 0 degrees, the full range of motion would be -90 degrees to 90 degrees.</p>
-              <p>TickTock expects that the first value in the <span className='is-code-ref'>range</span> array is the minimum value. Upon reaching this value the watch will cease operating until wound again. TickTock then expects the second value in the <span className='is-code-ref'>range</span> array to be the maximum rotation value. Winding the reserve will not exceed this value.</p>
-              <p>Upon initialization, the reserve indicator will be set to its max position and will drain 0.5 degrees every second.</p>
-              <CodeBlock>
-  {`let settings = {
-  ...
-  reserve: {
-    id: 'power-reserve-hand',
-    range: [-90, 90]
-  }
-};`}
-              </CodeBlock>
-            </DocSection>
-          </section>
-
-          <section ref={section => this.watchSection = section}>
-            <DocSection groupHeader='Watch Class' subHeader='Overview' anchor='watch-overview'>
-              <p>The <span className='is-code-ref'>Watch</span> class serves as the parent container for all the child components. As settings are passed into the instance of the <span className='is-code-ref'>Watch</span>, that instance is passed to each child component. This reference gives access to properties and methods that only exist on the <span className='is-code-ref'>Watch</span> class.</p>
-              <p>Notably, the <span className='is-code-ref'>Watch</span> class handles the initial key bindings and governs the overarching interval. The interval runs every second and updates the time and any other child component. If a watch contains a power reserve, the interval on the <span className='is-code-ref'>Watch</span> instance will be cleared, stopping all watch functionality.</p>
-            </DocSection>
-
-            <DocSection subHeader='Default Keybindings' anchor='watch-keybindings'>
-              <p>When the crown is clicked, a series of keydown event listeners are enabled to allow setting the time on dials, increasing power reserves, and alternating between dials. Additionally, the enter key is bound to replicate the behavior of clicking the crown.</p>
-              <p className='is-underlined'>Default Keybindings:</p>
-              <p>The <span className='is-code-ref'>enter</span> key will toggle the crown between default and set states.</p>
-              <p>The <span className='is-code-ref'>left</span> arrow key will wind the power reserve.</p>
-              <p className='is-underlined'>In Set State:</p>
-              <p>The <span className='is-code-ref'>up</span> and <span className='is-code-ref'>down</span> arrow keys will adjust the time of the active dial.</p>
-              <p>The <span className='is-code-ref'>right</span> arrow key will alternate the active dial based on the order of the dials array.</p>
-            </DocSection>
-
-            <DocSection subHeader='Default Intervals' anchor='watch-intervals'>
-              <p>Every instance of the <span className='is-code-ref'>Watch</span> class creates an interval to run every second. This interval will update the time and perform any checks and updates associated with other components.</p>
-              <p>For example, a watch with a day/night indicator will update the indicators position as the time reaches 12:00 AM because this check is part of the primary interval.</p>
-              <p>Watches that have a power reserve component will clear their interval when the reserve empties, or reaches its minimum range of motion, which will stop all watch functionality tied to the interview. This would leave the crown functionality as the only component that would still work with an empty reserve.</p>
-              <p>The interval can be stopped manually by calling <span className='is-code-ref'>[instance].stopInterval()</span> and resumed by calling <span className='is-code-ref'>[instance].startInterval()</span>.</p>
-            </DocSection>
           </section>
         </section>
       </div>

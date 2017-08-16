@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import SecondaryNav from './components/SecondaryNav/SecondaryNav';
+import ComplicationContainer from './components/ComplicationContainer/ComplicationContainer';
+import Animations from './components/Animations/Animations';
 
 class Home extends Component {
   constructor() {
@@ -29,10 +31,10 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <section className='panel flex-container-column center-content has-gears'>
+        <section className='panel flex-container-column center-content has-pattern'>
           <div className='container'>
-            <div className='header-watch-container'>
-
+            <div id='header-animation-container' className='header-watch-container'>
+              <Animations parent='header-animation-container' type='header' />
             </div>
             <h1>Snapfoo <span>JS</span></h1>
             <h3 className='has-spacer'>bringing life to svg animation</h3>
@@ -54,13 +56,14 @@ class Home extends Component {
           <div className='container'>
             <h4 className='is-light'>Demos</h4>
             <SecondaryNav active={this.state.activeDemo} update={this.updateActiveDemo} />
+            <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='animate' demo='animate-demo' active={this.state.activeDemo === 'animate'} docs='animate-overview'  />
           </div>
         </section>
         <section className='panel container'>
           <h4>About</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate tincidunt sodales. Curabitur et mauris at nisl dictum feugiat. Etiam facilisis molestie risus, non gravida dolor egestas finibus. Praesent tincidunt ante imperdiet enim dignissim convallis id vel ex. Vivamus nec sapien nec erat viverra vestibulum aliquam vel elit. Donec ut sapien faucibus diam elementum vehicula. Donec nec lectus nunc. Duis sed sem vel metus maximus sollicitudin quis non metus. Mauris porta commodo metus, eu venenatis est ultrices eu. Mauris et placerat urna. In ut mollis odio, ut viverra sem.</p>
-          <p>In tempor, metus quis volutpat finibus, lectus quam mollis enim, sit amet efficitur ligula mi in orci. Vestibulum nec convallis nibh. Mauris at tellus quis tortor dapibus finibus. Nullam sed leo augue. Maecenas et mi purus. Sed cursus elementum felis. Donec dapibus, neque ut dictum luctus, ex velit aliquet arcu, vitae luctus nunc sapien eget velit. Sed pulvinar porttitor nibh in sagittis. Praesent vehicula varius ex quis consectetur. Proin consectetur euismod condimentum. Aenean venenatis suscipit dui eget fermentum. Mauris tempor porta quam. Cras sollicitudin ultricies semper.</p>
-          <p>Pellentesque libero nibh, lacinia eu facilisis eget, hendrerit in velit. Morbi ut dui interdum, aliquet urna ut, consectetur diam. Maecenas ac massa eget nisi fringilla malesuada. Vestibulum sagittis eget tortor suscipit porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum est velit, at mattis eros vestibulum sed. Nulla risus tortor, porttitor et lacus sed, euismod placerat enim. Nunc scelerisque purus ac ipsum condimentum, at dictum nunc auctor. Nulla faucibus cursus dui, at fermentum nisi eleifend eu. Suspendisse posuere et ipsum in tempor.</p>
+          <p>During a project in 2014 that was built heavily around SnapSVG, the original functionality for SnapFoo was written. The project required a lot of animations, looping, and customized settings which resulted in plenty of lengthy functions with far too many arguments for easy re-use. After the project finished, SnapFoo was built by consolidating the functionality and simplifying the logic to help ease the challenges of animating within the SnapSVG library.</p>
+          <p>The goal of SnapFoo is to improve the broader scope of SnapSVG, a great library for creating SVG images. It leverages the already existing animation logic in SnapSVG but adds an abstracted layer to simplify and expand upon its use.</p>
+          <p>Lightweight, flexible, and with plenty of options, SnapFoo brings more power to SnapSVG for your SVG creation and animation needs.</p>
         </section>
       </div>
     );

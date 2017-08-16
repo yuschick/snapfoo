@@ -6,9 +6,11 @@ class DocSpecs extends Component {
   render() {
     return (
       <div className='flex-container doc-specs'>
+        {this.props.property ?
         <div>
           <span className='is-strong'>Property:</span> {this.props.property}
         </div>
+        : ''}
         <div>
           <span className='is-strong'>Type:</span> {this.props.type || 'Object'}
         </div>

@@ -108,6 +108,10 @@ ul {
   list-style: none;
 }
 
+ul ul {
+  padding: 0.25rem 1rem;
+}
+
 blockquote,
 q {
   quotes: none;
