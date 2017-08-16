@@ -6091,9 +6091,9 @@ slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
 
-snapfoo@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/snapfoo/-/snapfoo-2.1.5.tgz#fc6390782197621036182fabf2fda452db79b34c"
+snapfoo@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/snapfoo/-/snapfoo-2.1.6.tgz#e8a777893bf8a0f74bccea557704fbd799073416"
   dependencies:
     imports-loader "^0.7.1"
     jquery "^3.2.1"

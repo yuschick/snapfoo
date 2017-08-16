@@ -671,7 +671,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Options - reset' anchor='animatepath-options-reset'>
               <DocSpecs property='reset' type='Boolean' def='False' />
-              <p>The <span class='is-code-ref'>reset</span> property determines if an element should remain in its final state or be reset to its original values after completing the animation. If an element animates from left to right it will remain at its right position if obj.reset is false. If true, it will return to its original left position upon completing its animation.</p>
+              <p>The <span className='is-code-ref'>reset</span> property determines if an element should remain in its final state or be reset to its original values after completing the animation. If an element animates from left to right it will remain at its right position if obj.reset is false. If true, it will return to its original left position upon completing its animation.</p>
               <CodeBlock>
 {`const options = {
     callbackAt: 'loop',
@@ -687,7 +687,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Options - rewind' anchor='animatepath-options-rewind'>
               <DocSpecs property='rewind' type='Boolean' def='False' />
-              <p>Once an element completes its path animation in one direction, if the <span class='is-code-ref'>rewind</span> property is true, the element will be animated backwards along the path to its original position.</p>
+              <p>Once an element completes its path animation in one direction, if the <span className='is-code-ref'>rewind</span> property is true, the element will be animated backwards along the path to its original position.</p>
               <CodeBlock>
 {`const options = {
     callbackAt: 'loop',
@@ -722,7 +722,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Options - rewindDuration' anchor='animatepath-options-rewindduration'>
               <DocSpecs property='rewindDuration' type='Number' def='options.duration' />
-              <p>By default, the rewind animation will use the same duration value as the initial animation. However, the <span class='is-code-ref'>rewindDuration</span> property can be set to have a different behavior on the rewind.</p>
+              <p>By default, the rewind animation will use the same duration value as the initial animation. However, the <span className='is-code-ref'>rewindDuration</span> property can be set to have a different behavior on the rewind.</p>
               <CodeBlock>
 {`const options = {
     callbackAt: 'loop',
@@ -741,7 +741,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Options - rewindEasing' anchor='animatepath-options-rewindeasing'>
               <DocSpecs property='rewindEasing' type='Function' def='options.easing || mina.linear' />
-              <p>By default, the rewind animation will use the same easing function as the initial animation. However, the <span class='is-code-ref'>rewindEasing</span> property can be set to have a different behavior on the rewind.</p>
+              <p>By default, the rewind animation will use the same easing function as the initial animation. However, the <span className='is-code-ref'>rewindEasing</span> property can be set to have a different behavior on the rewind.</p>
               <CodeBlock>
 {`const options = {
     callbackAt: 'loop',
@@ -761,7 +761,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Options - reverse' anchor='animatepath-options-reverse'>
               <DocSpecs property='reverse' type='Boolean' def='False' />
-              <p>Setting the <span class='is-code-ref'>reverse</span> property to true allows the element to begin at the end of the path and animate to the beginning.</p>
+              <p>Setting the <span className='is-code-ref'>reverse</span> property to true allows the element to begin at the end of the path and animate to the beginning.</p>
               <CodeBlock>
 {`const options = {
     callbackAt: 'loop',
@@ -794,7 +794,7 @@ sceneOne.animate('.ball', settings [, Callback]);`}
 
             <DocSection subHeader='Animate Path - Callback' anchor='animatepath-callback'>
               <DocSpecs type='Function' />
-              <p>Provide a callback that will execute based upon the <span class='is-code-ref'>callbackAt</span> value. Each callback is scoped to the animated element itself, so using <span class='is-code-ref'>$(this)</span> will return the current element.</p>
+              <p>Provide a callback that will execute based upon the <span className='is-code-ref'>callbackAt</span> value. Each callback is scoped to the animated element itself, so using <span className='is-code-ref'>$(this)</span> will return the current element.</p>
               <CodeBlock>
 {`SnapFoo.animatePath('circle', obj, function() {
     $(this).attr('fill','#000');

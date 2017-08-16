@@ -16,7 +16,7 @@ class Guides extends Component {
       activeGuide: 1,
       menu: [
         {
-          header: 'Building Your First Watch',
+          header: 'Building Your First Animation',
           active: true,
           id: 1,
         },

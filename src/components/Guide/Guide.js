@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import BuildingYourFirstWatch from './../../Guides/BuildingYourFirstWatch';
+import BuildingYourFirstAnimation from './../../Guides/BuildingYourFirstAnimation';
 
 class Guide extends Component {
   constructor() {
@@ -12,7 +12,7 @@ class Guide extends Component {
   getGuide() {
     switch (this.props.id) {
       case 1:
-        return <BuildingYourFirstWatch />;
+        return <BuildingYourFirstAnimation />;
       default:
         return false;
     }

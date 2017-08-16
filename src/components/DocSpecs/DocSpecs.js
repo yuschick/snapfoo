@@ -28,7 +28,7 @@ class DocSpecs extends Component {
 }
 
 DocSpecs.propTypes = {
-  property: PropTypes.string.isRequired,
+  property: PropTypes.string,
   type: PropTypes.string,
   required: PropTypes.string,
   def: PropTypes.string,

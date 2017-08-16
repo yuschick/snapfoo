@@ -16,6 +16,10 @@ class Animations extends Component {
     this.buildWatchsettings();
   }
 
+  componentWillUnmount() {
+    this.SnapFoo = null;
+  }
+
   buildWatchsettings() {
     let settings = null;
     let element;
@@ -32,22 +36,48 @@ class Animations extends Component {
           loop: true,
           path: '#path-one'
         };
+        this.SnapFoo[type](element, settings, callback);
+
+        type = 'animatePath';
+        element = '#ball-two';
+        settings = {
+          duration: 2500,
+          loop: true,
+          path: '#path-two'
+        };
+        this.SnapFoo[type](element, settings, callback);
+
+        type = 'animatePath';
+        element = '#ball-three';
+        settings = {
+          duration: 2500,
+          loop: true,
+          path: '#path-three'
+        };
+        this.SnapFoo[type](element, settings, callback);
+
+        type = 'animatePath';
+        element = '#ball-four';
+        settings = {
+          duration: 2500,
+          loop: true,
+          path: '#path-four'
+        };
+        this.SnapFoo[type](element, settings, callback);
         break;
 
       default:
         return false;
     }
-
-    return this.SnapFoo[type](element, settings, callback);
   }
 
   getHeaderAnimation() {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" id='header-animation' version="1.1" x="0" y="0" viewBox="0 0 510 510" xmlSpace="preserve">
-        <path id="path-four" className="header-st0" d="M466 254.5H34c0 0-41 208 208 208v-431C242 31.5 466 7.5 466 254.5z"/>
-        <path id="path-three" className="header-st0" d="M256.6 29.4v432c0 0 208 41 208-208h-431C33.6 253.4 9.6 29.4 256.6 29.4z"/>
-        <path id="path-two" className="header-st0" d="M240.9 29.4v432c0 0-208 41-208-208h431C463.9 253.4 487.9 29.4 240.9 29.4z"/>
-        <path id="path-one" className="header-st0" d="M31.5 254.5h432c0 0 41 208-208 208v-431C255.5 31.5 31.5 7.5 31.5 254.5z"/>
+        <path id="path-four" className="header-st0" d="M466,254.5H34c0,0-27.5,216,221.5,216v-431C255.5,39.5,466,7.5,466,254.5z"/>
+        <path id="path-three" className="header-st0" d="M256.6,29.4v432c0,0,208,41,208-208h-431C33.6,253.4,9.6,29.4,256.6,29.4z"/>
+        <path id="path-two" className="header-st0" d="M254.5,29.4v432c0,0-221.6,41-221.6-208h431C463.9,253.4,501.5,29.4,254.5,29.4z"/>
+        <path id="path-one" className="header-st0" d="M31.5,254.5h434c0,0,39,216-210,216v-439C255.5,31.5,31.5,7.5,31.5,254.5z"/>
         <circle id="ball-one" className="header-st1" cx="31.5" cy="255" r="26.5"/>
         <circle id="ball-two" className="header-st1" cx="255" cy="31.5" r="26.5"/>
         <circle id="ball-three" className="header-st1" cx="255" cy="31.5" r="26.5"/>
@@ -68,7 +98,7 @@ class Animations extends Component {
           return false;
       }
 
-      return animation;
+      return animation || false;
   }
 }
 
