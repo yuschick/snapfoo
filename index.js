@@ -92,7 +92,7 @@ module.exports = function snapFoo(theSVGContainer) {
           doReset = obj.reset || false,
           frames = obj.frames,
           theFramesLength = frames.length,
-          totalChildren = $(theSVGContainer).children(el).size(),
+          totalChildren = $(theSVGContainer).children(el).length,
           totalDelay = 0,
           label = 0,
           frame = {},
@@ -211,7 +211,7 @@ module.exports = function snapFoo(theSVGContainer) {
           rewindEasing = rewind ? obj.rewindEasing || easing : mina.linear,
           eCallback = theCallback && typeof theCallback === 'function' ? theCallback : null,
           callbackAt = eCallback ? obj.callbackAt || 'end' : null,
-          totalChildren = $(theSVGContainer).children(el).size(),
+          totalChildren = $(theSVGContainer).children(el).length,
           theOptions = {},
           theIdentifier = void 0;
 
