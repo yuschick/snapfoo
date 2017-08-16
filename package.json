@@ -1,6 +1,6 @@
 {
   "name": "snapfoo",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "SnapFoo is an animation library that compliments Snap.svg to simplify the SVG animation process.",
   "main": "index.js",
   "scripts": {
