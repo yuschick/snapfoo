@@ -3162,6 +3162,13 @@ ignore@^3.2.0:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.3.tgz#432352e57accd87ab3110e82d3fea0e47812156d"
 
+imports-loader@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/imports-loader/-/imports-loader-0.7.1.tgz#f204b5f34702a32c1db7d48d89d5e867a0441253"
+  dependencies:
+    loader-utils "^1.0.2"
+    source-map "^0.5.6"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -6084,10 +6091,11 @@ slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
 
-snapfoo@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/snapfoo/-/snapfoo-2.1.0.tgz#4f2a214ccc69e82b403d02b77d1cc57798226f7c"
+snapfoo@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/snapfoo/-/snapfoo-2.1.2.tgz#1e32bd8da2d22eab6af4ac65dad7c838c44bf0ae"
   dependencies:
+    imports-loader "^0.7.1"
     jquery "^3.2.1"
     snapsvg "^0.5.1"
 
