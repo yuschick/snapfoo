@@ -214,8 +214,10 @@ module.exports = function snapFoo(theSVGContainer) {
           totalChildren = $(theSVGContainer).children(el).length,
           theOptions = {},
           theIdentifier = void 0;
+          console.log(totalChildren);
 
         $(theSVGContainer).children(el).each(function(num) {
+          console.log(totalChildren, this, num);
           $(this).delay(stagger * num).queue(function() {
             theIdentifier = identifier.create(this);
 
