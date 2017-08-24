@@ -45,6 +45,7 @@ const snapfoo = snapFoo("#theSVGContainer");
 - [ ] Update `animate` and `animatePath` to accept an array of element/frames object to allow animating multiple elements in different ways in one call
 - [ ] Replace the `loop` and `loopCount` properties with one `loop` property that defaults to false. It can also be a number, 0 being infinite, anything above being the specific loop count
 - [ ] Update the easing property from a `mina` function to accept a string like `'bounce'`. The SnapFoo logic will then use this like `mina[props.easing]`. This helps with SnapFoo use in React
+- [ ] Update the `rewind` property to be its own object instead of individual `rewind...` properties
 
 #### Contact
 [@Yuschick on Twitter](http://www.twitter.com/Yuschick)
