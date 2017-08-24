@@ -13,13 +13,13 @@ class SecondaryNav extends Component {
           <li className={this.props.active === 'animate-path' ? 'active' : ''} onClick={() => {this.props.update('animate-path')}}>
             <span>Animate Along Paths</span>
           </li>
-          <li className={this.props.active === 'callbacks' ? 'active' : ''} onClick={() => {this.props.update('callbacks')}}>
+          <li className={this.props.active === 'callback' ? 'active' : ''} onClick={() => {this.props.update('callback')}}>
             <span>Callbacks</span>
           </li>
-          <li className={this.props.active === 'loops' ? 'active' : ''} onClick={() => {this.props.update('loops')}}>
+          <li className={this.props.active === 'loop' ? 'active' : ''} onClick={() => {this.props.update('loop')}}>
             <span>Loops</span>
           </li>
-          <li className={this.props.active === 'resets' ? 'active' : ''} onClick={() => {this.props.update('resets')}}>
+          <li className={this.props.active === 'reset' ? 'active' : ''} onClick={() => {this.props.update('reset')}}>
             <span>Resets</span>
           </li>
         </ul>

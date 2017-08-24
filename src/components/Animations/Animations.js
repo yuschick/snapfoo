@@ -66,6 +66,29 @@ class Animations extends Component {
         this.SnapFoo[type](element, settings, callback);
         break;
 
+      case 'reset':
+        this.SnapFoo = snapFoo(`#reset-animation`);
+        type = 'animate';
+        element = '#reset';
+        settings = {
+          frames: [{
+            props: { transform: "t200,0" }
+          }, {
+            props: { transform: "t200,0, s.75,.75" }
+          }, {
+            props: { transform: "t400,0, s.75,.75" }
+          }],
+          duration: 3000,
+          reset: true
+        };
+        this.SnapFoo[type](element, settings, callback);
+
+        element = '#no-reset';
+        settings.reset = false;
+        this.SnapFoo[type](element, settings, callback);
+
+        break;
+
       default:
         return false;
     }
@@ -86,6 +109,36 @@ class Animations extends Component {
     )
   }
 
+  getAnimateAnimation() {
+    return (
+      <p>need an animate demo</p>
+    )
+  }
+
+  getAnimatePathAnimation() {
+    return (
+      <p>need an animate path demo</p>
+    )
+  }
+
+  getCallbackAnimation() {
+    return (
+      <p>need a callback demo</p>
+    )
+  }
+
+  getLoopAnimation() {
+    return (
+      <p>need a loop demo</p>
+    )
+  }
+
+  getResetAnimation() {
+    return (
+      <p>need a reset demo</p>
+    )
+  }
+
   render() {
       let animation;
 
@@ -94,16 +147,35 @@ class Animations extends Component {
           animation = this.getHeaderAnimation();
           break;
 
+        case 'animate':
+          animation = this.getAnimateAnimation();
+          break;
+
+        case 'animate-path':
+          animation = this.getAnimatePathAnimation();
+          break;
+
+        case 'callback':
+          animation = this.getCallbackAnimation();
+          break;
+
+        case 'loop':
+          animation = this.getLoopAnimation();
+          break;
+
+        case 'reset':
+          animation = this.getResetAnimation();
+          break;
+
         default:
           return false;
       }
 
-      return animation || false;
+      return animation;
   }
 }
 
 Animations.propType = {
-  parent: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "ticktock-js-site",
+  "name": "snapfoo-js-site",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -46,5 +46,5 @@
   "browserslist": [
     "last 3 versions"
   ],
-  "homepage": "http://yuschick.github.io/TickTock/"
+  "homepage": "http://yuschick.github.io/snapfoo/"
 }

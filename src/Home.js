@@ -57,6 +57,10 @@ class Home extends Component {
             <h4 className='is-light'>Demos</h4>
             <SecondaryNav active={this.state.activeDemo} update={this.updateActiveDemo} />
             <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='animate' demo='animate-demo' active={this.state.activeDemo === 'animate'} docs='animate-overview'  />
+            <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='animate-path' demo='animate-path-demo' active={this.state.activeDemo === 'animate-path'} docs='animatepath-overview'  />
+            <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='callback' demo='callback-demo' active={this.state.activeDemo === 'callback'} docs='animate-framesobj-callbackat'  />
+            <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='loop' demo='loop-demo' active={this.state.activeDemo === 'loop'} docs='animate-framesobj-loop'  />
+            <ComplicationContainer toggle={this.toggleCodeBlock} showCode={this.state.showCode} id='reset' demo='reset-demo' active={this.state.activeDemo === 'reset'} docs='animate-framesobj-reset'  />
           </div>
         </section>
         <section className='panel container'>
