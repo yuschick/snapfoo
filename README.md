@@ -25,12 +25,12 @@ npm install snapfoo --save
 
 #### Get Started
 
-**NPM**  
+**NPM**
 ```
 npm install snapfoo --save
 ```
 
-**Manual**  
+**Manual**
 Download SnapFoo and include the `./dist/` build in your project after jQuery and Snap.svg. Once included, call the library for use:
 
 ```js
@@ -41,11 +41,8 @@ const snapfoo = snapFoo("#theSVGContainer");
 + **snapfoo.animate()**: The primary animation call that receives an element or group of elements to animate based on theFramesObj object. Any element to be animated that does not already have an ID is appended the class "sf#" for a unique identifier.
 + **snapfoo.animatePath()**: Animate an element or group of elements along a path. Any element to be animated that does not already have an ID is appended the class "sf#" for a unique identifier.
 
-#### TODO
-- [ ] Update `animate` and `animatePath` to accept an array of element/frames object to allow animating multiple elements in different ways in one call
-- [ ] Replace the `loop` and `loopCount` properties with one `loop` property that defaults to false. It can also be a number, 0 being infinite, anything above being the specific loop count
-- [ ] Update the easing property from a `mina` function to accept a string like `'bounce'`. The SnapFoo logic will then use this like `mina[props.easing]`. This helps with SnapFoo use in React
-- [ ] Update the `rewind` property to be its own object instead of individual `rewind...` properties
-
 #### Contact
 [@Yuschick on Twitter](http://www.twitter.com/Yuschick)
+
+## Sponsors
+[<img src="https://spiceprogram.org/assets/img/chilicorn_sticker.svg" width="50" alt="Spice Program - Futurice">](https://spiceprogram.org/)
